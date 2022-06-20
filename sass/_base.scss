@@ -1,0 +1,60 @@
+// COLOR VARIABLES
+$color-yellow: #FCB72B;
+$color-dark-navy: #495567;
+$color-dim-grey: #939CAA;
+$color-light-grey: #E5ECF4;
+$color-snow: #F2F5F9;
+$color-light-yellow: #FFF4DF;
+
+$font-mono: 'Space Mono', sans-serif;
+$font-lex: 'Lexend Deva', sans-serif;
+
+
+
+/// BASE
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+  
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+
+}
+
+
+
+body {
+  font-family: $font-lex ;
+  font-size: 16px;
+  overflow-x: hidden;
+  
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+  
+  
+  
+  
+  }
+  
+
+// TYPOGRAPHY
+
+h1 {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px ;
+}
+
+
