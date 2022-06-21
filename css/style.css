@@ -353,13 +353,36 @@ main {
   z-index: 20;
   align-self: center; }
 
+.hamburger-menu.active {
+  background-image: url(../src/assets/icons/close.svg); }
+
 .nav-primary {
-  background-color: red;
+  background-color: #333a44;
   position: absolute;
-  width: 100vw;
+  display: none;
+  list-style: none; }
+  .nav-primary__list {
+    position: absolute;
+    top: 64px;
+    margin-left: 32px;
+    color: #fff;
+    list-style: none;
+    font-family: inherit;
+    gap: 2rem;
+    font-family: "Space Mono", sans-serif;
+    font-size: 1.4rem; }
+  .nav-primary__list-item:not(:last-child) {
+    margin-bottom: 1.6rem; }
+
+.nav-primary.show {
+  display: block;
+  z-index: 200;
+  width: 18.5rem;
   height: 100vh;
-  top: 0;
-  display: none; }
+  position: absolute;
+  top: 4.8rem;
+  left: 0;
+  top: 4.8rem; }
 
 .header {
   background-image: url("../src/assets/images/home-hero-mobile.jpg");
@@ -390,6 +413,10 @@ main {
     width: 11.25rem;
     padding: 1.2rem;
     margin: 0 auto; }
+  .header__cta.cta-nav {
+    position: absolute;
+    bottom: 15rem;
+    margin-left: 32px; }
   .header__arrow {
     position: absolute;
     bottom: 9rem;
