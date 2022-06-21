@@ -359,8 +359,9 @@ main {
 .nav-primary {
   background-color: #333a44;
   position: absolute;
-  display: none;
-  list-style: none; }
+  opacity: 0;
+  list-style: none;
+  transform: translateX(-200%); }
   .nav-primary__list {
     margin-top: 5rem;
     top: 64px;
@@ -380,9 +381,13 @@ main {
   display: block;
   z-index: 200;
   width: 18.5rem;
-  height: 85vh;
+  height: 100%;
+  position: fixed;
   top: 4.8rem;
-  left: 0; }
+  left: 0;
+  opacity: 1;
+  transition: ease .5s;
+  transform: translateY(0%); }
 
 .header {
   background-image: url("../src/assets/images/home-hero-mobile.jpg");
@@ -414,9 +419,9 @@ main {
     padding: 1.2rem;
     margin: 0 auto; }
   .header__cta.cta-nav {
-    position: absolute;
     bottom: 1rem;
-    margin-left: 32px; }
+    margin-left: 32px;
+    margin-top: 25rem; }
   .header__arrow {
     position: absolute;
     bottom: 9rem;
