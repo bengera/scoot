@@ -1,0 +1,54 @@
+.header {
+    background-image: url('../src/assets/images/home-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; // fit whole image
+    height: 90vh;
+    position: relative;
+
+    &__content {
+        color: $color-snow;
+        padding: 1.5rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        text-align: center;
+
+    }
+
+    &__description {
+        font-family: $font-lex;
+        line-height: 30px;
+        max-width: 95%;
+        margin: 0 auto;
+
+    }
+
+    &__cta {
+        background-color: $color-yellow;
+        color: $color-snow;
+        font-family: $font-mono;
+        border: 0;
+        cursor: pointer;
+        width: 11.25rem;
+        padding: 1.2rem;
+        margin: 0 auto;
+    }
+
+    &__cta.cta-nav {
+        
+        bottom: 1rem;
+        margin-left: 32px;
+        margin-top: 18rem;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 9rem;
+        left: -18rem;
+    }
+
+
+}
+
