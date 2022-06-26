@@ -12,7 +12,7 @@
         flex-direction: column;
         align-items: center;
         gap: 1.3rem;
-        margin: 2rem 1rem;
+        margin: 2rem 2.2rem;
         text-align: center;
 
     }
@@ -32,3 +32,8 @@
     }
 
 }
+
+div.how-to__box:nth-child(1) {
+    margin-top: $margin-md;
+   }
+   

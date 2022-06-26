@@ -452,7 +452,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1.3rem;
-  margin: 2rem 1rem;
+  margin: 2rem 2.2rem;
   text-align: center; }
 
 .how-to__img {
@@ -465,3 +465,6 @@ main {
 
 .how-to__description {
   color: #939CAA; }
+
+div.how-to__box:nth-child(1) {
+  margin-top: 3rem; }
