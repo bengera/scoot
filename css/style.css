@@ -460,9 +460,64 @@ main {
   width: 56px;
   height: 56px; }
 
-.how-to__title {
+.how-to__heading {
   color: #495567;
   font-family: "Space Mono", sans-serif; }
 
 .how-to__description {
-  color: #939CAA; }
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px; }
+
+.benefits__content-container {
+  display: flex;
+  flex-direction: column; }
+
+.benefits__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  margin: 2rem 2.2rem;
+  text-align: center;
+  position: relative; }
+
+.benefits__img {
+  border-radius: 50%;
+  width: 311px;
+  height: 311px; }
+
+.benefits__heading {
+  color: #495567;
+  font-family: "Space Mono", sans-serif;
+  font-size: 32px; }
+
+.benefits__description {
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px; }
+
+.benefits__button {
+  background-color: #FCB72B;
+  color: #F2F5F9;
+  font-family: "Space Mono", sans-serif;
+  border: 0;
+  cursor: pointer;
+  width: 11.25rem;
+  padding: 1.2rem;
+  margin: 0 auto; }
+
+.benefits__arrow-left-down {
+  position: absolute;
+  top: 10.5rem;
+  left: 1rem; }
+
+.benefits__arrow-right {
+  position: absolute;
+  top: -0.5rem;
+  left: -12rem; }
+
+.benefits__arrow-left-down-high {
+  position: absolute;
+  top: -0.5rem;
+  left: 8rem; }

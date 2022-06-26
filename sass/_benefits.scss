@@ -1,0 +1,70 @@
+.benefits {
+
+  &__content-container {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__box {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    margin: 2rem 2.2rem;
+    text-align: center;
+    position: relative;
+
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 311px;
+    height: 311px;
+  }
+
+
+
+  &__heading {
+    color: $color-dark-navy;
+    font-family: $font-mono;
+    font-size: 32px;
+  }
+
+  &__description {
+    color: $color-dim-grey;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  &__button {
+    background-color: $color-yellow;
+    color: $color-snow;
+    font-family: $font-mono;
+    border: 0;
+    cursor: pointer;
+    width: 11.25rem;
+    padding: 1.2rem;
+    margin: 0 auto;
+  }
+
+  &__arrow-left-down {
+    position: absolute;
+    top: 10.5rem;
+    left: 1rem;
+  }
+
+  &__arrow-right {
+    position: absolute;
+    top: -0.5rem;
+    left: -12rem;
+  }
+
+  &__arrow-left-down-high {
+    position: absolute;
+    top: -0.5rem;
+    left: 8rem;
+  }
+}
