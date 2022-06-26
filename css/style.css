@@ -303,6 +303,9 @@ template {
 [hidden] {
   display: none; }
 
+.margin-sm {
+  margin-bottom: 0.2rem; }
+
 *,
 *::before,
 *::after {
@@ -439,3 +442,26 @@ main {
     position: absolute;
     bottom: -6.1rem;
     left: -18rem; }
+
+.how-to__content-container {
+  display: flex;
+  flex-direction: column; }
+
+.how-to__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  margin: 2rem 1rem;
+  text-align: center; }
+
+.how-to__img {
+  width: 56px;
+  height: 56px; }
+
+.how-to__title {
+  color: #495567;
+  font-family: "Space Mono", sans-serif; }
+
+.how-to__description {
+  color: #939CAA; }
