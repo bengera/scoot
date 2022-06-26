@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
 
     }
@@ -21,7 +21,7 @@
     &__description {
         font-family: $font-lex;
         line-height: 30px;
-        max-width: 95%;
+        max-width: 90%;
         margin: 0 auto;
 
     }
@@ -46,7 +46,7 @@
 
     &__arrow {
         position: absolute;
-        bottom: -8.1rem;
+        bottom: -6.1rem;
         left: -18rem;
     }
 
