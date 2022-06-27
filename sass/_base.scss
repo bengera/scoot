@@ -5,6 +5,7 @@ $color-dim-grey: #939CAA;
 $color-light-grey: #E5ECF4;
 $color-snow: #F2F5F9;
 $color-light-yellow: #FFF4DF;
+$color-dark-grey: #333A44;
 
 $font-mono: 'Space Mono',
 sans-serif;
@@ -16,6 +17,8 @@ $margin-md: 3rem;
 .margin-sm {
     margin-bottom: 0.2rem;
 }
+
+
 
 
 
@@ -54,6 +57,10 @@ main {
 
 
 
+}
+
+section {
+    margin-bottom: 7.5rem;
 }
 
 
