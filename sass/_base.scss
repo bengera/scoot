@@ -18,7 +18,8 @@ $margin-md: 3rem;
     margin-bottom: 0.2rem;
 }
 
-
+// BREAKPOINTS
+$bp-tablet :  37.5em;
 
 
 
@@ -74,6 +75,10 @@ section {
     color: $color-snow;
     margin: 0;
     margin-top: 5rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+    margin-top: 0;    
+    }
 }
 
 

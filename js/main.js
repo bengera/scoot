@@ -33,6 +33,7 @@ function resetMenu() {
     console.log('reset');
     document.body.setAttribute("style", "position:static");
     overlay.setAttribute("style", "display:none"); 
+    hamMenu.classList.toggle('active');
     navPrimary.classList.remove('show');
     
 

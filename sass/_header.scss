@@ -6,6 +6,16 @@
     position: relative;
     margin-bottom: 5rem;
 
+    @media only screen and (min-width: $bp-tablet) {
+        background-image: url('../src/assets/images/home-hero-tablet.jpg');
+        background-size: cover;
+        display: flex;
+        position: relative;
+        height: auto;
+        padding: 5rem 5rem 10rem 5rem;
+
+    }
+
     &__content {
         position: relative;
         color: $color-snow;
@@ -16,6 +26,12 @@
         justify-content: center;
         gap: 1.5rem;
         text-align: center;
+
+        @media only screen and (min-width: $bp-tablet) {
+            align-self: baseline;
+            margin-top: 0;
+            
+        }
 
     }
 
@@ -39,7 +55,7 @@
     }
 
     &__cta.cta-nav {
-        
+
         bottom: 1rem;
         margin-left: 32px;
         margin-top: 18rem;
@@ -49,8 +65,27 @@
         position: absolute;
         bottom: -6.1rem;
         left: -18rem;
+
+        @media only screen and (min-width: $bp-tablet) {
+            bottom: -6.1rem;
+            left: -12rem;
+        }
+    }
+
+    &__circles {
+        display: none;
+
+        @media only screen and (min-width: $bp-tablet) {
+            display: block;
+            background-image: url('../src/assets/patterns/white-circles.svg');
+            background-repeat: no-repeat;
+            height: 5rem;
+            position: absolute;
+            width: 14rem;
+            right: -1rem;
+            bottom: 0rem;
+        }
     }
 
 
 }
-
