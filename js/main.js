@@ -9,11 +9,31 @@ hamMenu.addEventListener('click',() => {
 
     if (hamMenu.classList.contains('active')) {
         console.log('menu-open');
+        document.body.setAttribute("style", "position:fixed");
 
     } else {
         overlay.setAttribute("style", "display:none"); 
-        // resetMenu(); // reset drop-downs
+        document.body.setAttribute("style", "position:static");
     }
     
     
 });
+
+
+function scrollDownload() {
+    resetMenu();
+    let downloadSection = document.querySelector(".footer");
+    downloadSection.scrollIntoView(true);
+    
+        
+}
+
+
+function resetMenu() {
+    console.log('reset');
+    document.body.setAttribute("style", "position:static");
+    overlay.setAttribute("style", "display:none"); 
+    navPrimary.classList.remove('show');
+    
+
+}
