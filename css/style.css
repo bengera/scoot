@@ -579,7 +579,7 @@ section {
     text-decoration: none; }
   .footer__bottom {
     background-color: #333A44;
-    height: 50%;
+    height: 25rem;
     z-index: 100; }
   .footer__bottom-content {
     padding: 2rem;
@@ -589,8 +589,7 @@ section {
   .footer__social-container {
     margin: 0 auto;
     display: flex;
-    gap: 1.2rem;
-    margin-top: 3rem; }
+    gap: 1.2rem; }
   .footer__social-icon {
     height: 24px;
     width: 24px; }
