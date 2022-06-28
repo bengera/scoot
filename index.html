@@ -24,7 +24,22 @@
 
   <div id="overlay"></div>
 
-  <navigation-component></navigation-component>
+  <!-- <navigation-component></navigation-component> -->
+  <div class="navigation-container">
+
+    <button class="hamburger-menu"></button>
+    <img src="src/assets/logo.svg" alt="scoot logo" class="logo">
+
+    <nav class="nav-primary">
+      <ul class="nav-primary__list">
+        <li class="nav-primary__list-item"><a href="#" class="nav-primary__list-link">About</a></li>
+        <li class="nav-primary__list-item"><a href="#" class="nav-primary__list-link">Location</a></li>
+        <li class="nav-primary__list-item"><a href="#" class="nav-primary__list-link">Careers</a></li>
+      </ul>
+      <button onclick="scrollDownload()" class="header__cta cta-nav">Get Scootin</button>
+    </nav>
+    <button onclick="scrollDownload()" class="header__cta cta-nav-big">Get Scootin</button>
+  </div>
 
   <main>
 
@@ -51,30 +66,36 @@
 
         <div class="how-to__box">
           <img src="src/assets/icons/locate.svg" alt="location-icon" class="how-to__img">
+          <div class="how-to__description-container">
           <h3 class="how-to__heading margin-sm">Locate with app</h3>
           <p class="how-to__description">
             Use the app to find the nearest scooter to you. We are continuously placing scooters
             in the areas with most demand, so one should never be too far away.
           </p>
         </div>
+        </div>
 
         <div class="how-to__box">
           <img src="src/assets/icons/scooter.svg" alt="scooter-icon" class="how-to__img">
+          <div class="how-to__description-container">
           <h3 class="how-to__heading margin-sm">Pick your scooter</h3>
           <p class="how-to__description">
             We show the most important info for the scooters closest to you. So you know how much
             charge they have left and can see roughly how much it will cost.
           </p>
         </div>
+        </div>
 
         <div class="how-to__box">
           <img src="src/assets/icons/ride.svg" alt="ride-icon" class="how-to__img">
+          <div class="how-to__description-container">
           <h3 class="how-to__heading margin-sm">Enjoy the ride</h3>
           <p class="how-to__description">
             Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet,
             and you’re off! Always lock bikes away from walkways and accessibility ramps.
 
           </p>
+          </div>
         </div>
 
       </div>

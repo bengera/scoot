@@ -24,6 +24,7 @@ function scrollDownload() {
     resetMenu();
     let downloadSection = document.querySelector(".footer");
     downloadSection.scrollIntoView(true);
+    hamMenu.classList.remove('active');
     
         
 }

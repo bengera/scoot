@@ -305,6 +305,9 @@ template {
 
 .margin-sm {
   margin-bottom: 0.2rem; }
+  @media only screen and (min-width: 37.5em) {
+    .margin-sm {
+      margin-bottom: 27px; } }
 
 *,
 *::before,
@@ -327,8 +330,9 @@ main {
   max-width: 1440px;
   margin: 0 auto; }
 
-section {
-  margin-bottom: 7.5rem; }
+@media only screen and (min-width: 37.5em) {
+  section {
+    margin: 0 2rem 7.5rem 2rem; } }
 
 .h1-title-home {
   font-size: 48px;
@@ -346,9 +350,17 @@ section {
   position: relative;
   padding: 1.5rem;
   display: flex; }
+  @media only screen and (min-width: 37.5em) {
+    .navigation-container {
+      justify-content: space-between;
+      align-items: center; } }
 
 .logo {
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 28px; }
+  @media only screen and (min-width: 37.5em) {
+    .logo {
+      margin: 0; } }
 
 .hamburger-menu {
   background-color: transparent;
@@ -361,6 +373,9 @@ section {
   background-position: center center;
   z-index: 20;
   align-self: center; }
+  @media only screen and (min-width: 37.5em) {
+    .hamburger-menu {
+      display: none; } }
 
 .hamburger-menu.active {
   background-image: url(../src/assets/icons/close.svg); }
@@ -371,6 +386,14 @@ section {
   opacity: 0;
   list-style: none;
   transform: translateX(-200%); }
+  @media only screen and (min-width: 37.5em) {
+    .nav-primary {
+      opacity: 1;
+      transform: translateX(0%);
+      z-index: 2000;
+      display: flex;
+      position: static;
+      background-color: transparent; } }
   .nav-primary__list {
     margin-top: 5rem;
     top: 64px;
@@ -379,12 +402,25 @@ section {
     font-family: "Space Mono", sans-serif;
     font-size: 1.4rem;
     list-style: none; }
+    @media only screen and (min-width: 37.5em) {
+      .nav-primary__list {
+        font-size: 15px;
+        display: flex;
+        margin-top: 0;
+        padding: 0;
+        margin-left: 0; } }
   .nav-primary__list-item:not(:last-child) {
     margin-bottom: 1.6rem; }
+    @media only screen and (min-width: 37.5em) {
+      .nav-primary__list-item:not(:last-child) {
+        margin-bottom: 0; } }
   .nav-primary__list-link {
     color: #fff;
     font-family: inherit;
     text-decoration: none; }
+    @media only screen and (min-width: 37.5em) {
+      .nav-primary__list-link {
+        color: #939CAA; } }
 
 .nav-primary.show {
   display: block;
@@ -457,6 +493,15 @@ section {
     bottom: 1rem;
     margin-left: 32px;
     margin-top: 18rem; }
+    @media only screen and (min-width: 37.5em) {
+      .header__cta.cta-nav {
+        display: none; } }
+  .header__cta.cta-nav-big {
+    display: none; }
+    @media only screen and (min-width: 37.5em) {
+      .header__cta.cta-nav-big {
+        display: block;
+        margin: 0; } }
   .header__arrow {
     position: absolute;
     bottom: -6.1rem;
@@ -478,30 +523,50 @@ section {
         right: -1rem;
         bottom: 0rem; } }
 
-.how-to__content-container {
-  display: flex;
-  flex-direction: column; }
-
-.how-to__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.3rem;
-  margin: 2rem 2.2rem;
-  text-align: center; }
-
-.how-to__img {
-  width: 56px;
-  height: 56px; }
-
-.how-to__heading {
-  color: #495567;
-  font-family: "Space Mono", sans-serif; }
-
-.how-to__description {
-  color: #939CAA;
-  font-size: 15px;
-  line-height: 25px; }
+.how-to {
+  position: relative; }
+  @media only screen and (min-width: 37.5em) {
+    .how-to:before {
+      content: "";
+      position: absolute;
+      background-color: #E5ECF4;
+      width: 15px;
+      height: 553px;
+      top: -6rem;
+      left: 75px;
+      z-index: -1; } }
+  .how-to__content-container {
+    display: flex;
+    flex-direction: column; }
+  .how-to__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    margin: 2rem 2.2rem;
+    text-align: center; }
+    @media only screen and (min-width: 37.5em) {
+      .how-to__box {
+        flex-direction: row;
+        gap: 79px;
+        text-align: left; } }
+  .how-to__img {
+    width: 56px;
+    height: 56px; }
+    @media only screen and (min-width: 37.5em) {
+      .how-to__img {
+        width: 96px;
+        height: 96px; } }
+  .how-to__heading {
+    color: #495567;
+    font-family: "Space Mono", sans-serif; }
+    @media only screen and (min-width: 37.5em) {
+      .how-to__heading {
+        font-size: 24px; } }
+  .how-to__description {
+    color: #939CAA;
+    font-size: 15px;
+    line-height: 25px; }
 
 .benefits__content-container {
   display: flex;

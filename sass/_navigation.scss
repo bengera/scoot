@@ -2,16 +2,25 @@
 ///////NAVIGATION-TOP
 .navigation-container {
 
-
     position: relative;
     padding: 1.5rem;
     display: flex;
+
+    @media only screen and (min-width: $bp-tablet) {
+        justify-content: space-between;  
+        align-items: center;
+       }
 
 
 }
 
 .logo {
     margin: 0 auto;
+    height: 28px;
+
+    @media only screen and (min-width: $bp-tablet) {
+     margin: 0;   
+    }
    
 }
 
@@ -26,6 +35,10 @@
     background-position: center center;
     z-index: 20;
     align-self: center;
+
+    @media only screen and (min-width: $bp-tablet) {
+        display: none;
+    }
 }
 
 .hamburger-menu.active {
@@ -39,6 +52,15 @@
     opacity: 0;
     list-style: none;
     transform: translateX(-200%);
+
+    @media only screen and (min-width: $bp-tablet) {
+        opacity: 1;
+        transform: translateX(0%);
+        z-index: 2000;
+        display: flex;
+        position: static;  
+        background-color: transparent;
+    }
     
 
     &__list {
@@ -49,16 +71,33 @@
         font-family: $font-mono;
         font-size: 1.4rem;
         list-style: none;
+
+        @media only screen and (min-width: $bp-tablet) {
+            font-size: 15px;
+            display: flex;
+            margin-top: 0;
+            padding: 0;
+            margin-left: 0;
+            
+        }
     }
 
     &__list-item:not(:last-child) {
         margin-bottom: 1.6rem;
+
+        @media only screen and (min-width: $bp-tablet) {
+            margin-bottom: 0;
+        }
     }
 
     &__list-link {
         color: #fff;
         font-family: inherit;
         text-decoration: none;
+
+        @media only screen and (min-width: $bp-tablet) {
+            color: $color-dim-grey;
+        }
     }
 
 

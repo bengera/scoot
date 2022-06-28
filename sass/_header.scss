@@ -59,6 +59,21 @@
         bottom: 1rem;
         margin-left: 32px;
         margin-top: 18rem;
+
+        @media only screen and (min-width: $bp-tablet) {
+            // margin: 0;
+            display: none;
+        }
+    }
+
+    &__cta.cta-nav-big {
+
+        display: none;
+
+        @media only screen and (min-width: $bp-tablet) {
+            display: block;
+            margin: 0;
+        }
     }
 
     &__arrow {

@@ -12,14 +12,20 @@ sans-serif;
 $font-lex: 'Lexend Deca',
 sans-serif;
 
+// BREAKPOINTS
+$bp-tablet :  37.5em;
+
 $margin-md: 3rem;
 
 .margin-sm {
     margin-bottom: 0.2rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+            margin-bottom: 27px;
+       }
 }
 
-// BREAKPOINTS
-$bp-tablet :  37.5em;
+
 
 
 
@@ -61,7 +67,11 @@ main {
 }
 
 section {
-    margin-bottom: 7.5rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+        margin: 0 2rem 7.5rem 2rem; 
+    }
+    
 }
 
 

@@ -1,8 +1,25 @@
 .how-to {
+    position: relative;
+
+    &:before {
+
+        @media only screen and (min-width: $bp-tablet) {
+            content: "";
+            position: absolute;
+            background-color: $color-light-grey;
+            width: 15px;
+            height: 553px;
+            top: -6rem;
+            left: 75px;
+            z-index: -1;
+        }
+        
+    }
 
     &__content-container {
         display: flex;
         flex-direction: column;
+
 
     }
 
@@ -15,16 +32,32 @@
         margin: 2rem 2.2rem;
         text-align: center;
 
+        @media only screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 79px;
+            text-align: left;
+        }
+
     }
 
     &__img {
         width: 56px;
         height: 56px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            width: 96px;
+            height: 96px;
+        }
     }
 
     &__heading {
         color: $color-dark-navy;
         font-family: $font-mono;
+
+        @media only screen and (min-width: $bp-tablet) {
+            font-size: 24px;
+        }
+        
     }
 
     &__description {
