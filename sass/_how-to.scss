@@ -1,24 +1,11 @@
 .how-to {
-    position: relative;
+    // position: relative;
 
-    &:before {
-
-        @media only screen and (min-width: $bp-tablet) {
-            content: "";
-            position: absolute;
-            background-color: $color-light-grey;
-            width: 15px;
-            height: 553px;
-            top: -6rem;
-            left: 75px;
-            z-index: -1;
-        }
-        
-    }
 
     &__content-container {
         display: flex;
         flex-direction: column;
+        padding: 1rem;
 
 
     }
@@ -29,13 +16,15 @@
         flex-direction: column;
         align-items: center;
         gap: 1.3rem;
-        margin: 2rem 2.2rem;
+        margin: 2rem auto;
         text-align: center;
 
         @media only screen and (min-width: $bp-tablet) {
             flex-direction: row;
             gap: 79px;
             text-align: left;
+            position: relative;
+            
         }
 
     }
@@ -57,13 +46,42 @@
         @media only screen and (min-width: $bp-tablet) {
             font-size: 24px;
         }
-        
+
     }
 
     &__description {
         color: $color-dim-grey;
         font-size: 15px;
         line-height: 25px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            margin: 0 auto;
+            max-width: 573px;
+        }
+    }
+
+}
+
+
+.how-to__box.last-box {
+
+    @media only screen and (min-width: $bp-tablet) {
+        position: relative;
+
+        &:before {
+
+            @media only screen and (min-width: $bp-tablet) {
+                content: "";
+                position: absolute;
+                background-color: $color-light-grey;
+                width: 15px;
+                height: 701px;
+                top: -38rem;
+                left: 41px;
+                z-index: -1;
+            }
+
+        }
     }
 
 }
