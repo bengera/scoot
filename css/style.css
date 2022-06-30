@@ -603,11 +603,28 @@ h2 {
   @media only screen and (min-width: 37.5em) {
     .benefits__box {
       gap: 2.5rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .benefits__box::before {
+      content: "";
+      height: 445px;
+      width: 445px;
+      position: absolute;
+      background-image: url("../src/assets/patterns/circle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      top: -13px;
+      left: 643px;
+      z-index: -1; } }
 
 .benefits__img {
   border-radius: 50%;
   width: 311px;
   height: 311px; }
+  @media only screen and (min-width: 37.5em) {
+    .benefits__img {
+      width: 445px;
+      height: 445px; } }
 
 .benefits__heading {
   color: #495567;
@@ -652,6 +669,20 @@ h2 {
   @media only screen and (min-width: 37.5em) {
     .benefits__arrow-left-down-high {
       left: 18rem; } }
+
+@media only screen and (min-width: 37.5em) {
+  div.benefits__box:nth-child(2)::before {
+    content: "";
+    height: 445px;
+    width: 445px;
+    position: absolute;
+    background-image: url("../src/assets/patterns/circle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: -13px;
+    left: -409px;
+    z-index: -1; } }
 
 .footer {
   background-color: #495567;
@@ -721,7 +752,8 @@ h2 {
       .footer__nav {
         flex-direction: row;
         gap: 2rem;
-        align-items: center; } }
+        align-items: center;
+        margin: 0; } }
   .footer__list-link {
     color: #939CAA;
     font-family: "Space Mono", sans-serif;
@@ -742,13 +774,14 @@ h2 {
       .footer__bottom-content {
         flex-direction: row;
         height: 96px;
-        gap: 2rem;
-        margin: 0 auto;
-        max-width: 70%; } }
+        gap: 2rem; } }
   .footer__social-container {
     margin: 0 auto;
     display: flex;
     gap: 1.2rem; }
+    @media only screen and (min-width: 37.5em) {
+      .footer__social-container {
+        margin: 0 0 0 auto; } }
   .footer__social-icon {
     height: 24px;
     width: 24px; }
@@ -757,4 +790,5 @@ h2 {
     margin: 0 auto; }
     @media only screen and (min-width: 37.5em) {
       .footer__logo {
-        width: auto; } }
+        width: auto;
+        margin: 0; } }

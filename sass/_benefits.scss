@@ -8,7 +8,7 @@
   }
 
   &__box {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,8 +18,30 @@
     position: relative;
 
     @media only screen and (min-width: $bp-tablet) {
-      gap: 2.5rem;    
+      gap: 2.5rem;
+
+
+
+    }
+
+    &::before {
+
+      @media only screen and (min-width: $bp-tablet) {
+        content: "";
+        height: 445px;
+        width: 445px;
+        position: absolute;
+        background-image: url('../src/assets/patterns/circle.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        top: -13px;
+        left: 643px;
+        z-index: -1;
       }
+
+    }
+
 
   }
 
@@ -27,6 +49,11 @@
     border-radius: 50%;
     width: 311px;
     height: 311px;
+
+    @media only screen and (min-width: $bp-tablet) {
+      width: 445px;
+      height: 445px;
+    }
   }
 
 
@@ -37,8 +64,8 @@
     font-size: 32px;
 
     @media only screen and (min-width: $bp-tablet) {
-      max-width: 457px;  
-      }
+      max-width: 457px;
+    }
   }
 
   &__description {
@@ -47,8 +74,8 @@
     line-height: 25px;
 
     @media only screen and (min-width: $bp-tablet) {
-      max-width: 570px;  
-      }
+      max-width: 570px;
+    }
   }
 
   &__button {
@@ -80,7 +107,31 @@
     left: 8rem;
 
     @media only screen and (min-width: $bp-tablet) {
-      left: 18rem;   
-      }
+      left: 18rem;
+    }
   }
+}
+
+div.benefits__box:nth-child(2) {
+
+  &::before {
+
+    @media only screen and (min-width: $bp-tablet) {
+      content: "";
+      height: 445px;
+      width: 445px;
+      position: absolute;
+      background-image: url('../src/assets/patterns/circle.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      top: -13px;
+      left: -409px;
+      z-index: -1;
+    }
+
+  }
+
+
+
 }
