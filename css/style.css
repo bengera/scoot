@@ -764,7 +764,7 @@ h2 {
     z-index: 100; }
     @media only screen and (min-width: 37.5em) {
       .footer__bottom {
-        height: 10vh; } }
+        height: 6rem; } }
   .footer__bottom-content {
     padding: 2rem;
     display: flex;
