@@ -632,7 +632,8 @@ h2 {
   font-size: 32px; }
   @media only screen and (min-width: 37.5em) {
     .benefits__heading {
-      max-width: 457px; } }
+      max-width: 457px;
+      font-size: 48px; } }
 
 .benefits__description {
   color: #939CAA;
@@ -671,7 +672,7 @@ h2 {
       left: 18rem; } }
 
 @media only screen and (min-width: 37.5em) {
-  div.benefits__box:nth-child(2)::before {
+  .benefits__box:nth-child(2)::before {
     content: "";
     height: 445px;
     width: 445px;
