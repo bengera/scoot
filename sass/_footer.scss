@@ -129,6 +129,9 @@
         @media only screen and (min-width: $bp-tablet) {
             flex-direction: row;
             height: 96px;
+            gap: 2rem;
+            margin: 0 auto;
+            max-width: 70%;
         }
     }
 
