@@ -773,8 +773,7 @@ h2 {
     @media only screen and (min-width: 37.5em) {
       .footer__bottom-content {
         flex-direction: row;
-        height: 96px;
-        gap: 2rem; } }
+        height: 96px; } }
   .footer__social-container {
     margin: 0 auto;
     display: flex;
