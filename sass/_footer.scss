@@ -4,6 +4,11 @@
     height: 80vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
+    @media only screen and (min-width: $bp-tablet) {
+        height: auto;
+    }
 
     &__top {
 
@@ -16,10 +21,14 @@
         text-align: center;
         position: relative;
 
+        @media only screen and (min-width: $bp-tablet) {
+            height: 300px;
+        }
+
         &:before {
             content: "";
             display: block;
-            background-image: url('src/assets/patterns/white-circles.svg');
+            background-image: url('../src/assets/patterns/white-circles.svg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -30,6 +39,11 @@
             bottom: -147px;
             left: -408px;
             opacity: 0.2;
+
+            @media only screen and (min-width: $bp-tablet) {
+                background-size: 1248px;
+                right: -412px;
+            }
 
         }
 
@@ -58,6 +72,12 @@
         color: $color-snow;
         font-family: $font-mono;
         font-size: 32px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            font-size: 48px;
+            max-width: 457px;
+            margin: 0 auto;
+        }
     }
 
     &__nav {
@@ -67,6 +87,12 @@
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+
+        @media only screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 2rem;
+            align-items: center;
+        }
 
     }
 
@@ -87,21 +113,30 @@
         height: 25rem;
         z-index: 100;
 
+        @media only screen and (min-width: $bp-tablet) {
+            height: 10vh;
+        }
+
     }
 
     &__bottom-content {
-        // background-color: red;
+
         padding: 2rem;
         display: flex;
         flex-direction: column;
         gap: 3rem;
+
+        @media only screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            height: 96px;
+        }
     }
 
     &__social-container {
         margin: 0 auto;
         display: flex;
         gap: 1.2rem;
-        
+
 
     }
 
@@ -113,5 +148,9 @@
     &__logo {
         width: 100px;
         margin: 0 auto;
+
+        @media only screen and (min-width: $bp-tablet) {
+            width: auto;
+        }
     }
 }

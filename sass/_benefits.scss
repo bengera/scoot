@@ -8,14 +8,18 @@
   }
 
   &__box {
-    // border: 2px solid red;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.3rem;
+    gap: 2.5rem;
     margin: 4rem 2.2rem;
     text-align: center;
     position: relative;
+
+    @media only screen and (min-width: $bp-tablet) {
+      gap: 2.5rem;    
+      }
 
   }
 
@@ -31,12 +35,20 @@
     color: $color-dark-navy;
     font-family: $font-mono;
     font-size: 32px;
+
+    @media only screen and (min-width: $bp-tablet) {
+      max-width: 457px;  
+      }
   }
 
   &__description {
     color: $color-dim-grey;
     font-size: 15px;
     line-height: 25px;
+
+    @media only screen and (min-width: $bp-tablet) {
+      max-width: 570px;  
+      }
   }
 
   &__button {
@@ -66,5 +78,9 @@
     position: absolute;
     top: -0.5rem;
     left: 8rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+      left: 18rem;   
+      }
   }
 }
