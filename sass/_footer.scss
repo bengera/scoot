@@ -93,7 +93,7 @@
             gap: 2rem;
             align-items: center;
             margin: 0;
-            
+
 
         }
 
@@ -131,9 +131,9 @@
 
         @media only screen and (min-width: $bp-tablet) {
             flex-direction: row;
-            height: 96px;
+            // height: 96px;
             // gap: 2rem;
-            
+
         }
     }
 
@@ -144,7 +144,7 @@
 
         @media only screen and (min-width: $bp-tablet) {
             margin: 0 0 0 auto;
-            }
+        }
 
 
     }
@@ -164,3 +164,4 @@
         }
     }
 }
+

@@ -19,6 +19,7 @@ class Footer extends HTMLElement {
     <div class="footer__bottom">
 
       <div class="footer__bottom-content">
+      
       <img class="footer__logo" src="src/assets/logo-white.svg" alt="logo-white">
 
       <ul class="footer__nav">
