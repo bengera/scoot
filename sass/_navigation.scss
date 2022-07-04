@@ -11,6 +11,12 @@
         align-items: center;
        }
 
+       @media only screen and (min-width: $bp-desktop) {
+        max-width: 1106px;
+        margin: 0 auto;
+        height: 96px;
+    }
+
 
 }
 
@@ -62,7 +68,8 @@
         background-color: transparent;
         margin-left: 4rem;
     }
-    
+
+       
 
     &__list {
         margin-top: 5rem;

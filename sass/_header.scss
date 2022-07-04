@@ -13,8 +13,13 @@
         position: relative;
         height: auto;
         padding: 5rem 5rem 10rem 5rem;
-        
 
+
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+        background-image: url("../src/assets/images/home-hero-desktop.jpg");
+        height: 650px;
     }
 
     &__content {
@@ -31,7 +36,15 @@
         @media only screen and (min-width: $bp-tablet) {
             align-self: baseline;
             margin-top: 0;
-            
+
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            width: 850px;
+            margin: 0 1rem;
+            height: 30rem;
+            margin: 4rem 10rem;
+            position: relative;
         }
 
     }
@@ -41,6 +54,13 @@
         line-height: 30px;
         max-width: 90%;
         margin: 0 auto;
+
+        @media only screen and (min-width: $bp-desktop) {
+
+            text-align: left;
+            margin: 0;
+            max-width: 28rem;
+        }
 
     }
 
@@ -53,6 +73,10 @@
         width: 11.25rem;
         padding: 1.2rem;
         margin: 0 auto;
+
+        @media only screen and (min-width: $bp-desktop) {
+            margin: 0;
+        }
     }
 
     &__cta.cta-nav {
@@ -62,7 +86,7 @@
         margin-top: 18rem;
 
         @media only screen and (min-width: $bp-tablet) {
-            
+
             display: none;
         }
     }
@@ -76,6 +100,8 @@
             margin: 0;
             margin-left: auto;
         }
+
+
     }
 
     &__arrow {
@@ -86,6 +112,12 @@
         @media only screen and (min-width: $bp-tablet) {
             bottom: -6.1rem;
             left: -12rem;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            bottom: 8.9rem;
+            left: 30rem;
+            z-index: 3;
         }
     }
 
@@ -101,6 +133,26 @@
             width: 14rem;
             right: -1rem;
             bottom: 0rem;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            bottom: 10rem;
+            z-index: 2;
+        }
+    }
+
+    &__line {
+        display: none;
+
+        @media only screen and (min-width: $bp-desktop) {
+            display: block;
+            height: 1rem;
+            position: absolute;
+            top: 11.71rem;
+            left: -15rem;
+            width: 12rem;
+            ;
+
         }
     }
 

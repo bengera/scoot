@@ -7,6 +7,11 @@
         flex-direction: column;
         padding: 1rem;
 
+        @media only screen and (min-width: $bp-desktop) {
+         flex-direction: row;   
+         gap: 2rem;
+        }
+
 
     }
 
@@ -25,6 +30,11 @@
             text-align: left;
             position: relative;
             
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            flex-direction: column; 
+            width: 350px;
         }
 
     }
@@ -79,6 +89,13 @@
                 top: -38rem;
                 left: 41px;
                 z-index: -1;
+            }
+
+            @media only screen and (min-width: $bp-desktop) {
+                width: 98rem;
+                height: 1rem;
+                top: 3rem;
+                left: -1400px;
             }
 
         }
