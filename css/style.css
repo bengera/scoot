@@ -324,6 +324,13 @@ html {
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 16px;
+  max-width: 1900px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
   overflow-x: hidden; }
 
 @media only screen and (min-width: 37.5em) {
@@ -585,7 +592,9 @@ h2 {
   @media only screen and (min-width: 62.5em) {
     .how-to__content-container {
       flex-direction: row;
-      gap: 2rem; } }
+      gap: 5rem;
+      max-width: 1140px;
+      margin: 0 auto; } }
 
 .how-to__box {
   display: flex;
@@ -599,7 +608,8 @@ h2 {
       flex-direction: row;
       gap: 79px;
       text-align: left;
-      position: relative; } }
+      position: relative;
+      gap: 2rem; } }
   @media only screen and (min-width: 62.5em) {
     .how-to__box {
       flex-direction: column;
@@ -612,6 +622,9 @@ h2 {
     .how-to__img {
       width: 96px;
       height: 96px; } }
+  @media only screen and (min-width: 62.5em) {
+    .how-to__img {
+      margin-right: auto; } }
 
 .how-to__heading {
   color: #495567;
@@ -648,10 +661,27 @@ h2 {
       height: 1rem;
       top: 3rem;
       left: -1400px; } }
+  @media only screen and (min-width: 37.5em) and (min-width: 62.5em) {
+    .how-to__box.last-box:before {
+      width: 75rem;
+      left: -1201px; } }
 
 .benefits__content-container {
   display: flex;
   flex-direction: column; }
+  @media only screen and (min-width: 37.5em) {
+    .benefits__content-container {
+      gap: 5rem; } }
+
+.benefits__box-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center; }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__box-left {
+      text-align: left;
+      align-items: initial; } }
 
 .benefits__box {
   display: flex;
@@ -663,7 +693,11 @@ h2 {
   position: relative; }
   @media only screen and (min-width: 37.5em) {
     .benefits__box {
-      gap: 2.5rem; } }
+      gap: 2.5rem;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__box {
+      flex-direction: row-reverse; } }
   @media only screen and (min-width: 37.5em) {
     .benefits__box::before {
       content: "";
@@ -677,6 +711,9 @@ h2 {
       top: -13px;
       left: 643px;
       z-index: -1; } }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__box::before {
+      left: 1139px; } }
 
 .benefits__img {
   border-radius: 50%;
@@ -686,6 +723,9 @@ h2 {
     .benefits__img {
       width: 445px;
       height: 445px; } }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__img {
+      margin-left: 10rem; } }
 
 .benefits__heading {
   color: #495567;
@@ -703,6 +743,9 @@ h2 {
   @media only screen and (min-width: 37.5em) {
     .benefits__description {
       max-width: 570px; } }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__description {
+      max-width: 473px; } }
 
 .benefits__button {
   background-color: #FCB72B;
@@ -713,16 +756,26 @@ h2 {
   width: 11.25rem;
   padding: 1.2rem;
   margin: 0 auto; }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__button {
+      margin: 0; } }
 
 .benefits__arrow-left-down {
   position: absolute;
   top: 10.5rem;
   left: 1rem; }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__arrow-left-down {
+      top: 18.5rem;
+      left: 34rem; } }
 
 .benefits__arrow-right {
   position: absolute;
   top: -0.5rem;
   left: -12rem; }
+  @media only screen and (min-width: 37.5em) {
+    .benefits__arrow-right {
+      left: -17rem; } }
 
 .benefits__arrow-left-down-high {
   position: absolute;
@@ -731,6 +784,10 @@ h2 {
   @media only screen and (min-width: 37.5em) {
     .benefits__arrow-left-down-high {
       left: 18rem; } }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__arrow-left-down-high {
+      left: 57rem;
+      top: 4.5rem; } }
 
 @media only screen and (min-width: 37.5em) {
   .benefits__box:nth-child(2)::before {
@@ -745,6 +802,14 @@ h2 {
     top: -13px;
     left: -409px;
     z-index: -1; } }
+
+@media only screen and (min-width: 62.5em) {
+  .benefits__box:nth-child(2) {
+    flex-direction: row; } }
+
+.benefits__box:nth-child(2) > :nth-child(1) > :nth-child(2) {
+  margin-right: 10rem;
+  margin-left: 0; }
 
 .footer {
   background-color: #495567;

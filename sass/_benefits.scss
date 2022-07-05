@@ -5,6 +5,33 @@
     display: flex;
     flex-direction: column;
 
+    @media only screen and (min-width: $bp-tablet) {
+      gap: 5rem;
+    }
+    
+
+  }
+
+  &__box-right {
+
+    @media only screen and (min-width: $bp-desktop) {
+      // border: 2px solid rgb(216, 97, 43);
+    }
+
+  }
+
+  &__box-left {
+    display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      
+
+    @media only screen and (min-width: $bp-desktop) {
+      text-align: left;
+      align-items: initial;
+    }
+
   }
 
   &__box {
@@ -19,9 +46,12 @@
 
     @media only screen and (min-width: $bp-tablet) {
       gap: 2.5rem;
+      margin: 0 auto;
 
+    }
 
-
+    @media only screen and (min-width: $bp-desktop) {
+      flex-direction: row-reverse;
     }
 
     &::before {
@@ -40,6 +70,10 @@
         z-index: -1;
       }
 
+      @media only screen and (min-width: $bp-desktop) {
+        left: 1139px;
+      }
+
     }
 
 
@@ -53,6 +87,10 @@
     @media only screen and (min-width: $bp-tablet) {
       width: 445px;
       height: 445px;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin-left: 10rem;
     }
   }
 
@@ -77,6 +115,10 @@
     @media only screen and (min-width: $bp-tablet) {
       max-width: 570px;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+      max-width: 473px;
+    }
   }
 
   &__button {
@@ -88,18 +130,33 @@
     width: 11.25rem;
     padding: 1.2rem;
     margin: 0 auto;
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin: 0;
+    }
   }
 
   &__arrow-left-down {
     position: absolute;
     top: 10.5rem;
     left: 1rem;
+
+    @media only screen and (min-width: $bp-desktop) {
+      top: 18.5rem;
+      left: 34rem;
+      
+    }
   }
 
   &__arrow-right {
     position: absolute;
     top: -0.5rem;
     left: -12rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+      left: -17rem;
+    }
+    
   }
 
   &__arrow-left-down-high {
@@ -109,6 +166,11 @@
 
     @media only screen and (min-width: $bp-tablet) {
       left: 18rem;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      left: 57rem;
+      top: 4.5rem;
     }
   }
 }
@@ -131,8 +193,26 @@
       z-index: -1;
     }
 
+    
+
   }
 
 
 
 }
+
+
+.benefits__box:nth-child(2) {
+
+  @media only screen and (min-width: $bp-desktop) {
+    flex-direction: row; 
+  }
+  
+  }
+
+  .benefits__box:nth-child(2) > :nth-child(1) > :nth-child(2) {
+    margin-right: 10rem;
+    margin-left:0;
+    
+   }
+   

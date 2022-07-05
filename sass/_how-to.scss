@@ -9,7 +9,9 @@
 
         @media only screen and (min-width: $bp-desktop) {
          flex-direction: row;   
-         gap: 2rem;
+         gap: 5rem;
+         max-width: 1140px;
+         margin: 0 auto;
         }
 
 
@@ -29,12 +31,15 @@
             gap: 79px;
             text-align: left;
             position: relative;
+            gap: 2rem;
             
         }
 
         @media only screen and (min-width: $bp-desktop) {
             flex-direction: column; 
             width: 350px;
+
+            // border: 1px solid black;
         }
 
     }
@@ -46,6 +51,10 @@
         @media only screen and (min-width: $bp-tablet) {
             width: 96px;
             height: 96px;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            margin-right: auto; 
         }
     }
 
@@ -70,7 +79,9 @@
         }
     }
 
+    
 }
+
 
 
 .how-to__box.last-box {
@@ -98,7 +109,13 @@
                 left: -1400px;
             }
 
+            @media only screen and (min-width: $bp-desktop) {
+                width: 75rem;
+                left: -1201px;
+            }
+
         }
     }
 
 }
+
