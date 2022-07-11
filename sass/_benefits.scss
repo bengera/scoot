@@ -8,7 +8,7 @@
     @media only screen and (min-width: $bp-tablet) {
       gap: 5rem;
     }
-    
+
 
   }
 
@@ -22,10 +22,10 @@
 
   &__box-left {
     display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      align-items: center;
-      
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
 
     @media only screen and (min-width: $bp-desktop) {
       text-align: left;
@@ -144,7 +144,7 @@
     @media only screen and (min-width: $bp-desktop) {
       top: 18.5rem;
       left: 34rem;
-      
+
     }
   }
 
@@ -156,7 +156,13 @@
     @media only screen and (min-width: $bp-tablet) {
       left: -17rem;
     }
-    
+
+  }
+
+  &__arrow-far-right {
+    position: absolute;
+    top: -0.5rem;
+    left: -7rem;
   }
 
   &__arrow-left-down-high {
@@ -172,6 +178,12 @@
       left: 57rem;
       top: 4.5rem;
     }
+  }
+
+  &__arrow-left-up {
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
   }
 }
 
@@ -193,7 +205,7 @@
       z-index: -1;
     }
 
-    
+
 
   }
 
@@ -205,14 +217,17 @@
 .benefits__box:nth-child(2) {
 
   @media only screen and (min-width: $bp-desktop) {
-    flex-direction: row; 
-  }
-  
+    flex-direction: row;
   }
 
-  .benefits__box:nth-child(2) > :nth-child(1) > :nth-child(2) {
+}
+
+.benefits__box:nth-child(2)> :nth-child(1)> :nth-child(2) {
+  @media only screen and (min-width: $bp-desktop) {
     margin-right: 10rem;
-    margin-left:0;
-    
-   }
-   
+    margin-left: 0;
+  }
+
+
+
+}

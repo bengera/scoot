@@ -19,6 +19,7 @@ class Navigation extends HTMLElement {
       </ul>
       <button onclick="scrollDownload()" class="header__cta cta-nav">Get Scootin</button>
     </nav>
+    <button onclick="scrollDownload()" class="header__cta cta-nav-big">Get Scootin</button>
   </div>
     `
 
@@ -26,10 +27,6 @@ class Navigation extends HTMLElement {
   }
 
 }
-  // 01 class keyword defines a class
-  // 01 class declaration or expression to create a class as child of Footer
-  // 02 special method of a class for creating and initializing and object instance of that class
-  // 03 keyword used to access and call functions on an object's parent
 
 
   customElements.define('navigation-component', Navigation);
