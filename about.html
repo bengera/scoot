@@ -14,6 +14,7 @@
   <script src="js/navigation.js" type="text/javascript" defer></script>
   <script src="js/footer.js" type="text/javascript" defer></script>
   <script defer src="js/main.js"></script>
+  <script src="js/accordion.js" type="text/javascript" defer></script>
 
   <title>Frontend Mentor | Scoot</title>
 </head>
@@ -35,8 +36,7 @@
 
       <div class="benefits__box">
         <div class="benefits__box-right">
-          <img src="src/assets/patterns/left-upward-arrow.svg" alt="left-up-arrow"
-            class="benefits__arrow-left-up">
+          <img src="src/assets/patterns/left-upward-arrow.svg" alt="left-up-arrow" class="benefits__arrow-left-up">
           <img src="src/assets/images/digital-era.jpg" alt="digital era" class="benefits__img">
         </div>
         <div class="benefits__box-left">
@@ -50,8 +50,7 @@
 
       <div class="benefits__box">
         <div class="benefits__box-right">
-          <img src="src/assets/patterns/right-arrow.svg" alt="right-arrow"
-            class="benefits__arrow-far-right">
+          <img src="src/assets/patterns/right-arrow.svg" alt="right-arrow" class="benefits__arrow-far-right">
           <img src="src/assets/images/better-living.jpg" alt="better living" class="benefits__img">
         </div>
         <div class="benefits__box-left">
@@ -69,96 +68,148 @@
       <h1 class="values-join__heading">Our Values</h1>
 
       <div class="values-join__box">
-      <div class="values-join__content-container">
-        <img src="src/assets/images/our-tech.jpg" alt="our tech" class="values-join__img">
-        <h2 class="values-join__heading number">01</h2>
-        <h2 class="values-join__heading title">Our tech</h2>
-        <p class="values-join__description">
-          We’re using cutting edge technology to drive accessible urban transportation forward.
-          Our fully electric scooters are a joy to ride!
-        </p>
+        <div class="values-join__content-container">
+          <div class="values-join__img-container">
+            <img src="src/assets/images/our-tech.jpg" alt="our tech" class="values-join__img">
+            <h2 class="values-join__heading number">01</h2>
+          </div>
+          <h2 class="values-join h2">Our tech</h2>
+          <p class="values-join__description">
+            We’re using cutting edge technology to drive accessible urban transportation forward.
+            Our fully electric scooters are a joy to ride!
+          </p>
+        </div>
       </div>
-    </div>
 
+      <div class="values-join__box">
+        <div class="values-join__content-container">
+          <div class="values-join__img-container">
+          <img src="src/assets/images/our-integrity.jpg" alt="our integrity" class="values-join__img">
+          <h2 class="values-join__heading number">02</h2>
+        </div>
+          <h2 class="values-join h2">Our integrity</h2>
+          <p class="values-join__description">
+            We are fully committed to deliver a great yet safe, sustainable micro-mobility experience
+            in every city we serve.
+          </p>
+        </div>
+      </div>
+
+      <div class="values-join__box">
+        <div class="values-join__content-container">
+          <div class="values-join__img-container">
+          <img src="src/assets/images/our-community.jpg" alt="our community" class="values-join__img">
+          <h2 class="values-join__heading number">03</h2>
+        </div>
+          <h2 class="values-join h2">Our community</h2>
+          <p class="values-join__description">
+            We support every community we serve. All workers are paid a living wage based on their
+            location and are Scoot employees.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="faq">
+
+       <h2 class="faq__heading h2">FAQs</h2> 
+       <div class="faq__left-content">
+        <h1 class="faq__heading-top h2">How it works</h1>
+
+        <div class="accordion">
+
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              How can I download the app?
+            </div>
+            <div class="accordion__item-body">
+              <div class="accordion__item-body-content">
+                To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.
+              </div>
+            </div>
+          </div>
+        
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              Can I find nearby Scoots?
+            </div>
+            <div class="accordion__item-body">
+              <div class="accordion__item-body-content">
+                Definitely! Simply open up the app and allow us to find your location while using it. We'll
+  show you all of the closest Scoots and some extra useful information.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              Do I need a license to ride?
+            </div>
+            <div class="accordion__item-body">
+              <div class="accordion__item-body-content">
+                Yup! We provide information inside the app regarding local laws and the license you need to be
+                able to ride our Scoots.
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+       </div>
+
+       <div class="faq__right-content">
+        <h1 class="faq__heading-top h2">Safe Driving</h1>
+
+        <div class="accordion">
+
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              Should I wear a helmet?
+            </div>
+            <div class="accordion__item-body">
+              <div class="accordion__item-body-content">
+                Yes, please do! All cities have different laws. But we strongly strongly strongly recommend
+                always wearing a helmet regardless of the local laws. We like you and we want you to be as
+                safe as possible while Scooting.              </div>
+            </div>
+          </div>
+        
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              How about the rules & regulations?
+            </div>
+            <div class="accordion__item-body">
+              <div class="accordion__item-body-content">
+                Now is not the time to be a rule breaker. Be sure you're complying with all local laws and
+                regulations. Also, just be a good human being. Be sure not to park your Scoot where it can
+                block access to buildings or get in people's way.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              What if I damage my Scoot?
+            </div>
+            <div class="accordion__item-body">
+              <div class="accordion__item-body-content">
+                Be sure to read our terms and conditions carefully. Not the most fun job we know but we make
+                it as clear as possible. There's an option to add insurance for each trip, or you can sign
+                up for annual insurance if you're a regular Scooter
+              </div>
+            </div>
+          </div>
+        
+        </div>
+       </div>
     </section>
 
   </main>
 
+  <footer-component></footer-component>
 
 
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-  02
-  Our integrity
-  We are fully committed to deliver a great yet safe, sustainable micro-mobility experience
-  in every city we serve.
-
-  03
-  Our community
-  We support every community we serve. All workers are paid a living wage based on their
-  location and are Scoot employees.
-
-
-
-  FAQs
-
-  How it works
-
-  How do I download the app?
-
-  To download the Scoot app, you can search “Scoot” in both the App and Google Play stores.
-  An even simpler way to do it would be to click the relevant link at the bottom of this
-  page and you’ll be re-directed to the correct page.
-
-  Can I find a nearby Scoots?
-
-  Definitely! Simply open up the app and allow us to find your location while using it. We'll
-  show you all of the closest Scoots and some extra useful information.
-
-  Do I need a license to ride?
-
-  Yup! We provide information inside the app regarding local laws and the license you need to be
-  able to ride our Scoots.
-
-  Safe driving
-
-  Should I wear a helmet?
-
-  Yes, please do! All cities have different laws. But we strongly strongly strongly recommend
-  always wearing a helmet regardless of the local laws. We like you and we want you to be as
-  safe as possible while Scooting.
-
-  How about the rules & regulations?
-
-  Now is not the time to be a rule breaker. Be sure you're complying with all local laws and
-  regulations. Also, just be a good human being. Be sure not to park your Scoot where it can
-  block access to buildings or get in people's way.
-
-  What if I damage my Scoot?
-
-  Be sure to read our terms and conditions carefully. Not the most fun job we know but we make
-  it as clear as possible. There's an option to add insurance for each trip, or you can sign
-  up for annual insurance if you're a regular Scooter.
-
-  Sign up and Scoot off today
-
-
-
-  About
-  Location
-  Careers
 
 </body>
 
