@@ -903,9 +903,9 @@ h2 {
     margin: 1rem 0;
     border-radius: 0.5rem; }
   .accordion__item-header {
-    padding: 0.5rem 3rem 0.5rem 1rem;
-    min-height: 112px;
-    width: 311px;
+    padding: 2rem;
+    min-height: 70px;
+    width: 340px;
     margin: 0 auto;
     font-family: "Space Mono", sans-serif;
     display: flex;
@@ -928,11 +928,11 @@ h2 {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #F2F5F9;
-    width: 311px;
+    width: 340px;
     margin: 0 auto; }
   .accordion__item-body-content {
     line-height: 1.5rem;
-    padding: 1rem; }
+    padding: 0 2rem 2rem 2rem; }
 
 .footer {
   background-color: #495567;
