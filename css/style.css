@@ -933,6 +933,9 @@ h2 {
   .accordion__item-body-content {
     line-height: 1.5rem;
     padding: 0 2rem 2rem 2rem; }
+  .accordion__h3-title {
+    max-width: 260px;
+    font-size: 18px; }
 
 .footer {
   background-color: #495567;

@@ -1,9 +1,7 @@
 .accordion {
   width: 90%;
-  // max-width: 1000px;
   margin: 2rem auto;
-  // border: 2px solid white;
-
+  
   &__item {
     background-color: #fff;
     color: $color-dark-navy;
@@ -58,6 +56,12 @@
 
   }
 
+
+  &__h3-title {
+    max-width: 260px;
+    font-size: 18px;
+
+  }
 
 
 
