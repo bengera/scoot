@@ -34,6 +34,20 @@
 
   }
 
+  &__box.about {
+
+    &::before {
+
+      @media only screen and (min-width: $bp-tablet) {
+        
+        left: 575px;
+       
+      }
+
+  }
+
+}
+
   &__box {
 
     display: flex;
@@ -154,7 +168,7 @@
     left: -12rem;
 
     @media only screen and (min-width: $bp-tablet) {
-      left: -17rem;
+      left: -13rem;
     }
 
   }
@@ -163,6 +177,11 @@
     position: absolute;
     top: -0.5rem;
     left: -7rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+      top: -1.5rem;
+      left: -15rem;
+    }
   }
 
   &__arrow-left-down-high {
@@ -184,6 +203,12 @@
     position: absolute;
     top: 8rem;
     left: 3rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+      top: 15rem;
+      left: -4rem;
+      width: 830px;
+    }
   }
 }
 

@@ -344,7 +344,16 @@ h2 {
   max-width: 1920px;
   margin: 0 auto; }
 
-.h1-title-home, .h1-title-sub {
+.h1-title-sub {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  font-family: "Space Mono", sans-serif;
+  color: #F2F5F9;
+  margin: 0;
+  margin-top: 5rem; }
+
+.h1-title-home {
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -2.5px;
@@ -353,10 +362,10 @@ h2 {
   margin: 0;
   margin-top: 5rem; }
   @media only screen and (min-width: 37.5em) {
-    .h1-title-home, .h1-title-sub {
+    .h1-title-home {
       margin-top: 0; } }
   @media only screen and (min-width: 62.5em) {
-    .h1-title-home, .h1-title-sub {
+    .h1-title-home {
       max-width: 479px;
       text-align: left;
       font-size: 56px;
@@ -375,17 +384,40 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (min-width: 37.5em) {
+    .header-about {
+      justify-content: initial;
+      padding-left: 5rem;
+      position: relative; } }
+  .header-about__circles {
+    display: none; }
+    @media only screen and (min-width: 37.5em) {
+      .header-about__circles {
+        display: block;
+        background-image: url("../src/assets/patterns/white-circles.svg");
+        background-repeat: no-repeat;
+        height: 5rem;
+        position: absolute;
+        width: 14rem;
+        right: -1rem;
+        bottom: 1.7rem; } }
+    @media only screen and (min-width: 62.5em) {
+      .header-about__circles {
+        bottom: 10rem;
+        z-index: 2; } }
 
 .h2 {
   font-family: "Space Mono", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   color: #495567;
   margin: 0 auto; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 62.5em) {
     .h2 {
-      max-width: 457px;
-      font-size: 48px; } }
+      max-width: 457px; } }
+
+.benefits.about {
+  margin-top: 5rem; }
 
 .navigation-container {
   position: relative;
@@ -706,6 +738,10 @@ h2 {
       text-align: left;
       align-items: initial; } }
 
+@media only screen and (min-width: 37.5em) {
+  .benefits__box.about::before {
+    left: 575px; } }
+
 .benefits__box {
   display: flex;
   flex-direction: column;
@@ -798,12 +834,16 @@ h2 {
   left: -12rem; }
   @media only screen and (min-width: 37.5em) {
     .benefits__arrow-right {
-      left: -17rem; } }
+      left: -13rem; } }
 
 .benefits__arrow-far-right {
   position: absolute;
   top: -0.5rem;
   left: -7rem; }
+  @media only screen and (min-width: 37.5em) {
+    .benefits__arrow-far-right {
+      top: -1.5rem;
+      left: -15rem; } }
 
 .benefits__arrow-left-down-high {
   position: absolute;
@@ -821,6 +861,11 @@ h2 {
   position: absolute;
   top: 8rem;
   left: 3rem; }
+  @media only screen and (min-width: 37.5em) {
+    .benefits__arrow-left-up {
+      top: 15rem;
+      left: -4rem;
+      width: 830px; } }
 
 @media only screen and (min-width: 37.5em) {
   .benefits__box:nth-child(2)::before {
@@ -864,8 +909,8 @@ h2 {
   padding: 2.5rem;
   border-radius: 50%;
   position: absolute;
-  top: 16rem;
-  left: 6.3rem; }
+  top: 12rem;
+  left: 4.3rem; }
 
 .values-join__box {
   display: flex;
@@ -878,21 +923,29 @@ h2 {
 
 .values-join__img {
   border-radius: 50%;
-  width: 311px;
-  height: 311px;
+  width: 240px;
+  height: 240px;
   margin-bottom: 3.5rem; }
-  @media only screen and (min-width: 37.5em) {
-    .values-join__img {
-      width: 445px;
-      height: 445px; } }
-  @media only screen and (min-width: 62.5em) {
-    .values-join__img {
-      margin-left: 10rem; } }
 
 .values-join__description {
   color: #939CAA;
   font-size: 15px;
   line-height: 25px; }
+  @media only screen and (min-width: 37.5em) {
+    .values-join__description {
+      max-width: 457px; } }
+
+@media only screen and (min-width: 37.5em) {
+  h1.values-join__heading {
+    font-size: 48px; } }
+
+@media only screen and (min-width: 37.5em) {
+  .faq__heading {
+    font-size: 48px; } }
+
+@media only screen and (min-width: 37.5em) {
+  .faq__heading-top {
+    font-size: 40px; } }
 
 .accordion {
   width: 90%;
@@ -913,6 +966,10 @@ h2 {
     position: relative;
     cursor: pointer;
     background-color: #F2F5F9; }
+    @media only screen and (min-width: 37.5em) {
+      .accordion__item-header {
+        width: auto;
+        font-size: 48px; } }
   .accordion__item-header::after {
     content: "";
     position: absolute;
@@ -930,12 +987,19 @@ h2 {
     background-color: #F2F5F9;
     width: 340px;
     margin: 0 auto; }
+    @media only screen and (min-width: 37.5em) {
+      .accordion__item-body {
+        width: auto; } }
   .accordion__item-body-content {
     line-height: 1.5rem;
     padding: 0 2rem 2rem 2rem; }
   .accordion__h3-title {
     max-width: 260px;
     font-size: 18px; }
+    @media only screen and (min-width: 37.5em) {
+      .accordion__h3-title {
+        max-width: inherit;
+        font-size: 24px; } }
 
 .footer {
   background-color: #495567;

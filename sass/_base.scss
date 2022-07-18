@@ -13,8 +13,8 @@ $font-lex: 'Lexend Deca',
 sans-serif;
 
 // BREAKPOINTS
-$bp-tablet : 37.5em;
-$bp-desktop : 62.5em;
+$bp-tablet : 37.5em; //600
+$bp-desktop : 62.5em; //1000
 
 $margin-md: 3rem;
 
@@ -57,14 +57,11 @@ body {
     max-width: 1900px;
     margin: 0 auto;
     overflow-x: hidden;
-    // border:1px solid black;
-
 }
 
 main {
     max-width: 1440px;
     margin: 0 auto;
-    // border: 2px solid royalblue;
     overflow-x: hidden;
 
 
@@ -82,6 +79,8 @@ section {
 
 h2 {
     letter-spacing: -2.14px;
+
+    
 }
 
 .master-container {
@@ -92,7 +91,17 @@ h2 {
 
 // TYPOGRAPHY
 
-.h1-title-home,.h1-title-sub {
+.h1-title-sub{
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    font-family: $font-mono;
+    color: $color-snow;
+    margin: 0;
+    margin-top: 5rem;
+}
+
+.h1-title-home {
     font-size: 48px;
     line-height: 56px;
     letter-spacing: -2.5px;
@@ -109,7 +118,6 @@ h2 {
         max-width: 479px;
         text-align: left;
         font-size: 56px;
-
         position: absolute;
         top: 0rem;
         left: -5rem;
@@ -126,25 +134,57 @@ h2 {
     background-image: url('../src/assets/images/about-hero-mobile.jpg');
     background-repeat: no-repeat;
     background-size: 100%; 
-    // border:2px solid black;
     height: 178px;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @media only screen and (min-width: $bp-tablet) {
+        justify-content: initial;
+        padding-left: 5rem;
+        position: relative;
+    }
+
+    &__circles {
+        display: none;
+
+        @media only screen and (min-width: $bp-tablet) {
+            display: block;
+            background-image: url('../src/assets/patterns/white-circles.svg');
+            background-repeat: no-repeat;
+            height: 5rem;
+            position: absolute;
+            width: 14rem;
+            right: -1rem;
+            bottom: 1.7rem;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            bottom: 10rem;
+            z-index: 2;
+        }
+    }
+
+    
+
 }
 
 .h2 {
     font-family: "Space Mono", sans-serif;
-         font-size: 32px;
+         font-size: 24px;
          text-align: center;
          color: #495567;
          margin: 0 auto;
 
 
 
-         @media only screen and (min-width: $bp-tablet) {
+         @media only screen and (min-width: $bp-desktop) {
              max-width: 457px;
-             font-size: 48px;
+            //  font-size: 48px;
          }
+}
+
+
+.benefits.about {
+    margin-top: 5rem;
 }

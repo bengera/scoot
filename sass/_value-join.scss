@@ -20,6 +20,9 @@
          color: $color-dark-navy;
          font-family: $font-mono;
          text-align: center;
+
+        
+         
      }
 
      &__heading.number {
@@ -27,8 +30,8 @@
          padding: 2.5rem;
          border-radius: 50%;
          position: absolute;
-         top: 16rem;
-         left: 6.3rem;
+         top: 12rem;
+         left: 4.3rem;
      }
 
      &__box {
@@ -46,23 +49,31 @@
 
      &__img {
          border-radius: 50%;
-         width: 311px;
-         height: 311px;
+         width: 240px;
+         height: 240px;
          margin-bottom: 3.5rem;
 
-         @media only screen and (min-width: $bp-tablet) {
-             width: 445px;
-             height: 445px;
-         }
-
-         @media only screen and (min-width: $bp-desktop) {
-             margin-left: 10rem;
-         }
+        
      }
 
      &__description {
          color: #939CAA;
          font-size: 15px;
          line-height: 25px;
+
+         @media only screen and (min-width: $bp-tablet) {
+            max-width: 457px;
+        }
+
+         
      }
  }
+
+ h1.values-join__heading {
+
+    @media only screen and (min-width: $bp-tablet) {
+        font-size: 48px;
+    }
+    
+   }
+   

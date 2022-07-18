@@ -1,3 +1,17 @@
+.faq {
+  &__heading {
+    @media only screen and (min-width: $bp-tablet) {
+       font-size: 48px; 
+    }
+  }
+
+  &__heading-top {
+    @media only screen and (min-width: $bp-tablet) {
+       font-size: 40px; 
+    }
+  }
+}
+
 .accordion {
   width: 90%;
   margin: 2rem auto;
@@ -20,6 +34,11 @@
     position: relative;
     cursor: pointer;
     background-color: $color-snow;
+
+    @media only screen and (min-width: $bp-tablet) {
+      width: auto;  
+      font-size: 48px;
+    }
 
   }
 
@@ -46,6 +65,10 @@
     background-color: $color-snow;
     width: 340px;
     margin: 0 auto;
+
+    @media only screen and (min-width: $bp-tablet) {
+      width: auto;   
+    }
   }
 
   &__item-body-content {
@@ -60,6 +83,11 @@
   &__h3-title {
     max-width: 260px;
     font-size: 18px;
+
+    @media only screen and (min-width: $bp-tablet) {
+        max-width: inherit;
+        font-size: 24px;
+    }
 
   }
 
