@@ -62,7 +62,11 @@ body {
 main {
     max-width: 1440px;
     margin: 0 auto;
-    overflow-x: hidden;
+
+    @media only screen and (min-width: $bp-desktop) {
+        overflow-x: hidden;
+    }
+    
 
 
 

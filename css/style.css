@@ -330,8 +330,10 @@ body {
 
 main {
   max-width: 1440px;
-  margin: 0 auto;
-  overflow-x: hidden; }
+  margin: 0 auto; }
+  @media only screen and (min-width: 62.5em) {
+    main {
+      overflow-x: hidden; } }
 
 @media only screen and (min-width: 37.5em) {
   section {
