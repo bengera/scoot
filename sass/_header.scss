@@ -83,6 +83,10 @@
     &__cta.apply { //apply button for careers
         width: 95%;
 
+        @media only screen and (min-width: $bp-tablet) {
+            width: 180px;
+        }
+
     }
 
     &__cta.cta-nav {

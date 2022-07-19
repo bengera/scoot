@@ -54,7 +54,7 @@ html {
 body {
     font-family: $font-lex;
     font-size: 16px;
-    max-width: 1900px;
+    max-width: 1920px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -156,6 +156,15 @@ h3 {
         max-height: 180px;
         margin: 0 auto;
         width: 370px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-between;
+            width: 90%;
+            
+
+        }
     }
 
     &__content-left {}

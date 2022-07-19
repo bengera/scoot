@@ -324,7 +324,7 @@ html {
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 16px;
-  max-width: 1900px;
+  max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden; }
 
@@ -395,6 +395,12 @@ h3 {
     max-height: 180px;
     margin: 0 auto;
     width: 370px; }
+    @media only screen and (min-width: 37.5em) {
+      .jobs__box {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        width: 90%; } }
   .jobs__title {
     color: #495567;
     margin-bottom: 0.4rem;
@@ -573,6 +579,9 @@ h3 {
         margin: 0; } }
   .header__cta.apply {
     width: 95%; }
+    @media only screen and (min-width: 37.5em) {
+      .header__cta.apply {
+        width: 180px; } }
   .header__cta.cta-nav {
     bottom: 1rem;
     margin-left: 32px;
@@ -818,6 +827,15 @@ h3 {
     .benefits__arrow-left-down {
       top: 18.5rem;
       left: 34rem; } }
+
+@media only screen and (min-width: 37.5em) {
+  .benefits__arrow-left-down.about {
+    top: 18.5rem;
+    left: -2rem; } }
+
+@media only screen and (min-width: 62.5em) {
+  .benefits__arrow-left-down.about {
+    left: 33rem; } }
 
 .benefits__arrow-right {
   position: absolute;
