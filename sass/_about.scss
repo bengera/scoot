@@ -1,0 +1,75 @@
+.header-sub {
+    background-image: url('../src/assets/images/about-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    height: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: $bp-tablet) {
+        background-image: url('../src/assets/images/about-hero-tablet.jpg');
+        justify-content: initial;
+        padding-left: 5rem;
+        position: relative;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+        background-image: url('../src/assets/images/about-hero-desktop.jpg');
+        
+    }
+
+    &__circles {
+        display: none;
+
+        @media only screen and (min-width: $bp-tablet) {
+            display: block;
+            background-image: url('../src/assets/patterns/white-circles.svg');
+            background-repeat: no-repeat;
+            height: 5rem;
+            position: absolute;
+            width: 14rem;
+            right: -1rem;
+            bottom: 1.7rem;
+        }
+
+       
+    }
+
+    
+
+}
+
+.h2 {
+        font-family: "Space Mono", sans-serif;
+         font-size: 24px;
+         text-align: center;
+         color: #495567;
+         margin: 0 auto;
+
+
+
+         @media only screen and (min-width: $bp-desktop) {
+             max-width: 457px;
+            
+         }
+}
+
+
+.benefits.about {
+    margin-top: 5rem;
+}
+
+.careers {
+    background-image: url('../src/assets/images/careers-location-hero-mobile.jpg');
+
+    @media only screen and (min-width: $bp-tablet) {
+        background-image: url('../src/assets/images/careers-locations-hero-tablet.jpg');
+        
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+        background-image: url('../src/assets/images/careers-locations-hero-desktop.jpg');  
+        
+    }
+}

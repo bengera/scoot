@@ -1,89 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/navigation.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script defer src="js/main.js"></script>
+
   <title>Frontend Mentor | Scoot</title>
 </head>
+
 <body>
 
-  About
-  Location
-  Careers
+  <div id="overlay"></div>
 
-  Get Scootin
+  <navigation-component></navigation-component>
+
+  <header class="header-sub careers">
+    <h1 class="h1-title-sub">Careers</h1>
+    <div class="header-sub__circles"></div>
+  </header>
+
+  <main>
+
+    <section class="benefits about">
+
+      <div class="benefits__content-container">
+
+        <div class="benefits__box about">
+          <div class="benefits__box-right">
+            <img src="src/assets/patterns/left-downward-arrow.svg" alt="left-up-arrow"
+              class="benefits__arrow-left-down">
+            <img src="src/assets/images/join-us.jpg" alt="join us" class="benefits__img">
+          </div>
+          <div class="benefits__box-left">
+            <h2 class="benefits__heading">Care to join our mission?</h2>
+            <p class="benefits__description">
+              We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our
+              mission to provide clean, accessible transport to improve urban living we want to hear from you!
+            </p>
+            <button class="header__cta">Say Hello</button>
+
+          </div>
+        </div>
 
 
+      </div>
 
-  Careers
+      </div>
 
-
-
-  Care to join our mission?
-
-  We’re always looking for ambitious individuals to help us on our journey. If you’re 
-  passionate about our mission to provide clean, accessible transport to improve urban 
-  living we want to hear from you!
-
-  Say Hello
+    </section>
 
 
+    <h1 class="values-join__heading">Our Values</h1>
 
-  Why join us?
+    <section class="values-join">
+      
 
-  01
-  Our tech
-  We’re using cutting edge technology to drive accessible urban transportation forward. 
-  Our fully electric scooters are a joy to ride!
+      <div class="values-join__box">
+        <div class="values-join__content-container">
+          <div class="values-join__img-container">
+            <img src="src/assets/images/our-tech.jpg" alt="our tech" class="values-join__img">
+            <h2 class="values-join__heading number">01</h2>
+          </div>
+          <h2 class="values-join h2">Our tech</h2>
+          <p class="values-join__description">
+            We’re using cutting edge technology to drive accessible urban transportation forward.
+            Our fully electric scooters are a joy to ride!
+          </p>
+        </div>
+      </div>
 
-  02
-  Our integrity
-  We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
-  in every city we serve.
+      <div class="values-join__box">
+        <div class="values-join__content-container">
+          <div class="values-join__img-container">
+            <img src="src/assets/images/our-integrity.jpg" alt="our integrity" class="values-join__img">
+            <h2 class="values-join__heading number">02</h2>
+          </div>
+          <h2 class="values-join h2">Our integrity</h2>
+          <p class="values-join__description">
+            We are fully committed to deliver a great yet safe, sustainable micro-mobility experience
+            in every city we serve.
+          </p>
+        </div>
+      </div>
 
-  03
-  Our community
-  We support every community we serve. All workers are paid a living wage based on their 
-  location and are Scoot employees.
+      <div class="values-join__box">
+        <div class="values-join__content-container">
+          <div class="values-join__img-container">
+            <img src="src/assets/images/our-community.jpg" alt="our community" class="values-join__img">
+            <h2 class="values-join__heading number">03</h2>
+          </div>
+          <h2 class="values-join h2">Our community</h2>
+          <p class="values-join__description">
+            We support every community we serve. All workers are paid a living wage based on their
+            location and are Scoot employees.
+          </p>
+        </div>
+      </div>
 
   
 
-  General Manager
-  Jakarta, Indonesia
-  Apply
+    </section>
 
-  UI/UX Designer
-  Yokohama, Japan
-  Apply
+<section class="jobs">
 
-  Blog Content Copywriter
-  New York, United States
-  Apply
+  <div class ="jobs__box">
+    <div class="jobs__content-left">
+        <h2 class="jobs__title">General Manager</h2>
+        <small class="jobs__location">Jakarta, Indonesia</small>
+    </div>
+    <div class="jobs__content-right">
+      <button class="header__cta apply">Apply</button>
+    </div>
+  </div>
 
-  Graphic Designer
-  New York, United States
-  Apply
+  <div class ="jobs__box">
+    <div class="jobs__content-left">
+        <h2 class="jobs__title">UI/UX Designer</h2>
+        <small class="jobs__location">Yokohama, Japan</small>
+    </div>
+    <div class="jobs__content-right">
+      <button class="header__cta apply">Apply</button>
+    </div>
+  </div>
 
-  Fleet Supervisor
-  Jakarta, Indonesia
-  Apply
+  <div class ="jobs__box">
+    <div class="jobs__content-left">
+        <h2 class="jobs__title">Blog Content Copywriter</h2>
+        <small class="jobs__location">New York, United States</small>
+    </div>
+    <div class="jobs__content-right">
+      <button class="header__cta apply">Apply</button>
+    </div>
+  </div>
 
-  UX Analyst
-  London, United Kingdom
-  Apply
+  <div class ="jobs__box">
+    <div class="jobs__content-left">
+        <h2 class="jobs__title">Graphic Designer</h2>
+        <small class="jobs__location">New York, United States</small>
+    </div>
+    <div class="jobs__content-right">
+      <button class="header__cta apply">Apply</button>
+    </div>
+  </div>
 
-  
+  <div class ="jobs__box">
+    <div class="jobs__content-left">
+        <h2 class="jobs__title">Fleet Supervisor</h2>
+        <small class="jobs__location">Jakarta, Indonesia</small>
+    </div>
+    <div class="jobs__content-right">
+      <button class="header__cta apply">Apply</button>
+    </div>
+  </div>
 
-  Sign up and Scoot off today
+  <div class ="jobs__box">
+    <div class="jobs__content-left">
+        <h2 class="jobs__title">UX Analyst</h2>
+        <small class="jobs__location">London, United Kingdom</small>
+    </div>
+    <div class="jobs__content-right">
+      <button class="header__cta apply">Apply</button>
+    </div>
+  </div>
+
+</section>
 
 
 
-  About
-  Location
-  Careers
+  </main>
+
+  <footer-component></footer-component>
 
 </body>
+
 </html>

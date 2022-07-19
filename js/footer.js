@@ -23,9 +23,9 @@ class Footer extends HTMLElement {
       <img class="footer__logo" src="src/assets/logo-white.svg" alt="logo-white">
 
       <ul class="footer__nav">
-        <li class="footer_list-item"><a href="#" class="footer__list-link">About</a></li>
-        <li class="footer__list-item"><a href="#" class="footer__list-link">Location</a></li>
-        <li class="footer__list-item"><a href="#" class="footer__list-link">Careers</a></li>
+        <li class="footer_list-item"><a href="/about.html" class="footer__list-link">About</a></li>
+        <li class="footer__list-item"><a href="/location.html" class="footer__list-link">Location</a></li>
+        <li class="footer__list-item"><a href="/careers.html" class="footer__list-link">Careers</a></li>
       </ul>
 
       <div class="footer__social-container">

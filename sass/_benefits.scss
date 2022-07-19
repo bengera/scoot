@@ -44,6 +44,10 @@
        
       }
 
+      @media only screen and (min-width: $bp-desktop) {
+        left: 1130px;
+      }
+
   }
 
 }
@@ -87,6 +91,8 @@
       @media only screen and (min-width: $bp-desktop) {
         left: 1139px;
       }
+
+      
 
     }
 
@@ -209,6 +215,10 @@
       left: -4rem;
       width: 830px;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+      left: 32rem;
+    }
   }
 }
 
@@ -229,6 +239,8 @@
       left: -409px;
       z-index: -1;
     }
+
+    
 
 
 

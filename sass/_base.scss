@@ -60,13 +60,14 @@ body {
 }
 
 main {
+    // max-width: 1920px;
     max-width: 1440px;
     margin: 0 auto;
 
     @media only screen and (min-width: $bp-desktop) {
         overflow-x: hidden;
     }
-    
+
 
 
 
@@ -81,10 +82,12 @@ section {
 
 }
 
-h2 {
+h1,
+h2,
+h3 {
     letter-spacing: -2.14px;
 
-    
+
 }
 
 .master-container {
@@ -95,7 +98,7 @@ h2 {
 
 // TYPOGRAPHY
 
-.h1-title-sub{
+.h1-title-sub {
     font-size: 48px;
     line-height: 56px;
     letter-spacing: -2.5px;
@@ -134,61 +137,39 @@ h2 {
 
 
 
-.header-about {
-    background-image: url('../src/assets/images/about-hero-mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%; 
-    height: 178px;
+//JOBS SECTION
+.jobs {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 7.5rem;
 
-    @media only screen and (min-width: $bp-tablet) {
-        justify-content: initial;
-        padding-left: 5rem;
-        position: relative;
+
+
+    &__box {
+        background-color: $color-snow;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        text-align: center;
+        max-height: 180px;
+        margin: 0 auto;
+        width: 370px;
     }
 
-    &__circles {
-        display: none;
+    &__content-left {}
 
-        @media only screen and (min-width: $bp-tablet) {
-            display: block;
-            background-image: url('../src/assets/patterns/white-circles.svg');
-            background-repeat: no-repeat;
-            height: 5rem;
-            position: absolute;
-            width: 14rem;
-            right: -1rem;
-            bottom: 1.7rem;
-        }
+    &__content-right {}
 
-        @media only screen and (min-width: $bp-desktop) {
-            bottom: 10rem;
-            z-index: 2;
-        }
+    &__title {
+        color: $color-dark-navy;
+        margin-bottom: 0.4rem;
+        font-size: 18px;
     }
 
-    
-
-}
-
-.h2 {
-    font-family: "Space Mono", sans-serif;
-         font-size: 24px;
-         text-align: center;
-         color: #495567;
-         margin: 0 auto;
-
-
-
-         @media only screen and (min-width: $bp-desktop) {
-             max-width: 457px;
-            //  font-size: 48px;
-         }
-}
-
-
-.benefits.about {
-    margin-top: 5rem;
+    &__location {
+        color: $color-dark-navy;
+        font-size: 15px;
+    }
 }

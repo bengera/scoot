@@ -64,6 +64,7 @@
 
     }
 
+    
     &__cta {
         background-color: $color-yellow;
         color: $color-snow;
@@ -77,6 +78,11 @@
         @media only screen and (min-width: $bp-desktop) {
             margin: 0;
         }
+    }
+
+    &__cta.apply { //apply button for careers
+        width: 95%;
+
     }
 
     &__cta.cta-nav {

@@ -13,9 +13,9 @@ class Navigation extends HTMLElement {
 
     <nav class="nav-primary">
       <ul class="nav-primary__list">
-        <li class="nav-primary__list-item"><a href="#" class="nav-primary__list-link">About</a></li>
-        <li class="nav-primary__list-item"><a href="#" class="nav-primary__list-link">Location</a></li>
-        <li class="nav-primary__list-item"><a href="#" class="nav-primary__list-link">Careers</a></li>
+        <li class="nav-primary__list-item"><a href="/about.html" class="nav-primary__list-link">About</a></li>
+        <li class="nav-primary__list-item"><a href="/location.html" class="nav-primary__list-link">Location</a></li>
+        <li class="nav-primary__list-item"><a href="/careers.html" class="nav-primary__list-link">Careers</a></li>
       </ul>
       <button onclick="scrollDownload()" class="header__cta cta-nav">Get Scootin</button>
     </nav>
