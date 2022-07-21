@@ -137,49 +137,68 @@ h3 {
 
 
 
-//JOBS SECTION
-.jobs {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    margin-bottom: 7.5rem;
+// Locations
+.locations {
+    margin-top: 2rem;
+    padding: 1rem;
 
+    &__top-content {
+        margin-bottom: 4rem;
+    }
+    
 
+    &__map {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 
     &__box {
-        background-color: $color-snow;
+        background-color: $color-light-yellow;
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        padding: 2rem;
+        padding: 1.5rem;
         text-align: center;
         max-height: 180px;
-        margin: 0 auto;
+        margin: 1rem auto 1rem;
         width: 370px;
+        
 
         @media only screen and (min-width: $bp-tablet) {
-            flex-direction: row;
-            text-align: left;
-            justify-content: space-between;
-            width: 90%;
+            
             
 
         }
     }
 
-    &__content-left {}
-
-    &__content-right {}
-
-    &__title {
+    &__place {
         color: $color-dark-navy;
-        margin-bottom: 0.4rem;
-        font-size: 18px;
-        letter-spacing: 0.8px;
     }
 
-    &__location {
-        color: $color-dark-navy;
-        font-size: 15px;
+    &__bottom-content {
+        // border: 2px solid red;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        max-width: 311px;
+        margin: 0 auto;
+        
     }
+
+    &__button {
+        background-color: $color-yellow;
+        color: $color-snow;
+        font-family: $font-mono;
+        border: 0;
+        cursor: pointer;
+        width: 11.25rem;
+        padding: 1.2rem;
+        margin: 0 auto;
+    
+        @media only screen and (min-width: $bp-desktop) {
+          margin: 0;
+        }
+      }
 }

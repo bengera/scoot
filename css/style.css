@@ -380,35 +380,46 @@ h3 {
 .h1-title-sub {
   margin-top: 0; }
 
-.jobs {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  margin-bottom: 7.5rem; }
-  .jobs__box {
-    background-color: #F2F5F9;
+.locations {
+  margin-top: 2rem;
+  padding: 1rem; }
+  .locations__top-content {
+    margin-bottom: 4rem; }
+  .locations__map {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem; }
+  .locations__box {
+    background-color: #FFF4DF;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     max-height: 180px;
-    margin: 0 auto;
+    margin: 1rem auto 1rem;
     width: 370px; }
-    @media only screen and (min-width: 37.5em) {
-      .jobs__box {
-        flex-direction: row;
-        text-align: left;
-        justify-content: space-between;
-        width: 90%; } }
-  .jobs__title {
-    color: #495567;
-    margin-bottom: 0.4rem;
-    font-size: 18px;
-    letter-spacing: 0.8px; }
-  .jobs__location {
-    color: #495567;
-    font-size: 15px; }
+  .locations__place {
+    color: #495567; }
+  .locations__bottom-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 311px;
+    margin: 0 auto; }
+  .locations__button {
+    background-color: #FCB72B;
+    color: #F2F5F9;
+    font-family: "Space Mono", sans-serif;
+    border: 0;
+    cursor: pointer;
+    width: 11.25rem;
+    padding: 1.2rem;
+    margin: 0 auto; }
+    @media only screen and (min-width: 62.5em) {
+      .locations__button {
+        margin: 0; } }
 
 .navigation-container {
   position: relative;
@@ -422,13 +433,6 @@ h3 {
       max-width: 1106px;
       margin: 0 auto;
       height: 96px; } }
-
-.logo {
-  margin: 0 auto;
-  height: 28px; }
-  @media only screen and (min-width: 37.5em) {
-    .logo {
-      margin: 0; } }
 
 .hamburger-menu {
   background-color: transparent;
@@ -514,6 +518,10 @@ h3 {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2; }
+
+.logo-link {
+  margin: 0 auto;
+  height: 28px; }
 
 .header {
   background-image: url("../src/assets/images/home-hero-mobile.jpg");
@@ -945,13 +953,16 @@ h3 {
 .benefits.about {
   margin-top: 4.5rem; }
 
-.careers {
+.careers,
+.location {
   background-image: url("../src/assets/images/careers-location-hero-mobile.jpg"); }
   @media only screen and (min-width: 37.5em) {
-    .careers {
+    .careers,
+    .location {
       background-image: url("../src/assets/images/careers-locations-hero-tablet.jpg"); } }
   @media only screen and (min-width: 62.5em) {
-    .careers {
+    .careers,
+    .location {
       background-image: url("../src/assets/images/careers-locations-hero-desktop.jpg"); } }
 
 @media only screen and (min-width: 62.5em) {
@@ -1069,12 +1080,43 @@ h3 {
         max-width: inherit;
         font-size: 24px; } }
 
+.jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 7.5rem; }
+  .jobs__box {
+    background-color: #F2F5F9;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+    max-height: 180px;
+    margin: 0 auto;
+    width: 370px; }
+    @media only screen and (min-width: 37.5em) {
+      .jobs__box {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        width: 90%; } }
+  .jobs__title {
+    color: #495567;
+    margin-bottom: 0.4rem;
+    font-size: 18px;
+    letter-spacing: 0.8px; }
+  .jobs__location {
+    color: #495567;
+    font-size: 15px; }
+
 .footer {
   background-color: #495567;
   height: 80vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 5rem; }
   @media only screen and (min-width: 37.5em) {
     .footer {
       height: auto; } }

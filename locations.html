@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/navigation.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script defer src="js/main.js"></script>
+
+  <title>Frontend Mentor | Scoot</title>
+</head>
+
+<body>
+
+  <div id="overlay"></div>
+
+  <navigation-component></navigation-component>
+
+  <header class="header-sub location">
+    <h1 class="h1-title-sub">Locations</h1>
+    <div class="header-sub__circles"></div>
+  </header>
+
+  <main>
+
+<section class="locations">
+
+  <div class="locations__top-content">
+    <picture class="locations__picture">
+      <source media="(min-width: 600px)" srcset="./src/assets/images/world-map-tablet.png">
+      <source media="(min-width: 1000px)" srcset="./src/assets/images/world-map-desktop.png">
+      <img class="locations__map" alt="world map" src="./src/assets/images/world-map-mobile.png">
+    </picture>
+
+    <div class="locations__box">
+      <h2 class="locations__place">New York</h2>
+    </div>
+
+    <div class="locations__box">
+      <h2 class="locations__place">London</h2>
+    </div>
+
+    <div class="locations__box">
+      <h2 class="locations__place">Jakarta</h2>
+    </div>
+
+    <div class="locations__box">
+      <h2 class="locations__place">Yokohama</h2>
+    </div>
+
+ </div>
+
+  <div class="locations__bottom-content">
+    <h2 class="benefits__heading">Your City Not Listed?</h2>
+          <p class="benefits__description">
+            If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.
+          </p>
+          <button class="locations__button">Message Us</button>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer-component></footer-component>
+
+</body>
+
+</html>

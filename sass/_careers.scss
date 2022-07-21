@@ -1,0 +1,45 @@
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 7.5rem;
+
+
+
+    &__box {
+        background-color: $color-snow;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        text-align: center;
+        max-height: 180px;
+        margin: 0 auto;
+        width: 370px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-between;
+            width: 90%;
+            
+
+        }
+    }
+
+    &__content-left {}
+
+    &__content-right {}
+
+    &__title {
+        color: $color-dark-navy;
+        margin-bottom: 0.4rem;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+    }
+
+    &__location {
+        color: $color-dark-navy;
+        font-size: 15px;
+    }
+}

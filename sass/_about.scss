@@ -60,7 +60,8 @@
     margin-top: 4.5rem;
 }
 
-.careers {
+.careers,
+.location {
     background-image: url('../src/assets/images/careers-location-hero-mobile.jpg');
 
     @media only screen and (min-width: $bp-tablet) {
