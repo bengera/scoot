@@ -644,62 +644,61 @@ h3 {
         left: -15rem;
         width: 12rem; } }
 
-.how-to__content-container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem; }
-  @media only screen and (min-width: 62.5em) {
-    .how-to__content-container {
-      flex-direction: row;
-      gap: 5rem;
-      max-width: 1140px;
-      margin: 0 auto; } }
-
-.how-to__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.3rem;
-  margin: 2rem auto;
-  text-align: center; }
-  @media only screen and (min-width: 37.5em) {
-    .how-to__box {
-      flex-direction: row;
-      gap: 79px;
-      text-align: left;
-      position: relative;
-      gap: 2rem; } }
-  @media only screen and (min-width: 62.5em) {
-    .how-to__box {
-      flex-direction: column;
-      width: 350px; } }
-
-.how-to__img {
-  width: 56px;
-  height: 56px; }
-  @media only screen and (min-width: 37.5em) {
-    .how-to__img {
-      width: 96px;
-      height: 96px; } }
-  @media only screen and (min-width: 62.5em) {
-    .how-to__img {
-      margin-right: auto; } }
-
-.how-to__heading {
-  color: #495567;
-  font-family: "Space Mono", sans-serif; }
-  @media only screen and (min-width: 37.5em) {
-    .how-to__heading {
-      font-size: 24px; } }
-
-.how-to__description {
-  color: #939CAA;
-  font-size: 15px;
-  line-height: 25px; }
-  @media only screen and (min-width: 37.5em) {
-    .how-to__description {
-      margin: 0 auto;
-      max-width: 573px; } }
+.how-to {
+  margin-bottom: 120px; }
+  .how-to__content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; }
+    @media only screen and (min-width: 62.5em) {
+      .how-to__content-container {
+        flex-direction: row;
+        gap: 5rem;
+        max-width: 1140px;
+        margin: 0 auto; } }
+  .how-to__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    margin: 2rem auto;
+    text-align: center; }
+    @media only screen and (min-width: 37.5em) {
+      .how-to__box {
+        flex-direction: row;
+        gap: 79px;
+        text-align: left;
+        position: relative;
+        gap: 2rem; } }
+    @media only screen and (min-width: 62.5em) {
+      .how-to__box {
+        flex-direction: column;
+        width: 350px; } }
+  .how-to__img {
+    width: 56px;
+    height: 56px; }
+    @media only screen and (min-width: 37.5em) {
+      .how-to__img {
+        width: 96px;
+        height: 96px; } }
+    @media only screen and (min-width: 62.5em) {
+      .how-to__img {
+        margin-right: auto; } }
+  .how-to__heading {
+    color: #495567;
+    font-family: "Space Mono", sans-serif; }
+    @media only screen and (min-width: 37.5em) {
+      .how-to__heading {
+        font-size: 24px; } }
+  .how-to__description {
+    color: #939CAA;
+    font-size: 15px;
+    line-height: 25px;
+    width: 311px; }
+    @media only screen and (min-width: 37.5em) {
+      .how-to__description {
+        margin: 0 auto;
+        max-width: 573px; } }
 
 @media only screen and (min-width: 37.5em) {
   .how-to__box.last-box {
@@ -727,10 +726,8 @@ h3 {
 
 .benefits__content-container {
   display: flex;
-  flex-direction: column; }
-  @media only screen and (min-width: 37.5em) {
-    .benefits__content-container {
-      gap: 5rem; } }
+  flex-direction: column;
+  gap: 5rem; }
 
 .benefits__box-left {
   display: flex;
