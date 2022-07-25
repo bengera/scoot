@@ -337,7 +337,7 @@ main {
 
 @media only screen and (min-width: 37.5em) {
   section {
-    margin: 0 2rem 7.5rem 2rem; } }
+    margin: 0 2rem 2rem 2rem; } }
 
 h1,
 h2,
@@ -467,6 +467,13 @@ h3 {
     @media only screen and (min-width: 37.5em) {
       .locations__bottom-content {
         max-width: 570px; } }
+    @media only screen and (min-width: 62.5em) {
+      .locations__bottom-content {
+        flex-direction: row;
+        align-items: center;
+        max-width: 1200px;
+        text-align: left;
+        gap: 2.2rem; } }
   .locations__button {
     background-color: #FCB72B;
     color: #F2F5F9;
@@ -866,8 +873,19 @@ h3 {
   @media only screen and (min-width: 37.5em) {
     .benefits__heading {
       max-width: 457px;
-      font-size: 48px;
-      margin: 0 auto; } }
+      font-size: 48px; } }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__heading {
+      max-width: 437px; } }
+
+@media only screen and (min-width: 37.5em) {
+  .benefits__heading.locations {
+    margin: 0 auto;
+    max-width: 347px; } }
+
+@media only screen and (min-width: 62.5em) {
+  .benefits__heading.locations {
+    margin: 0; } }
 
 .benefits__description {
   color: #939CAA;
@@ -878,7 +896,8 @@ h3 {
       max-width: 570px; } }
   @media only screen and (min-width: 62.5em) {
     .benefits__description {
-      max-width: 473px; } }
+      max-width: 473px;
+      text-align: left; } }
 
 .benefits__button {
   background-color: #FCB72B;

@@ -126,7 +126,27 @@
     @media only screen and (min-width: $bp-tablet) {
       max-width: 457px;
       font-size: 48px;
+      // margin: 0 auto;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      max-width: 437px;
+    }
+  }
+
+  &__heading.locations {
+    
+
+    @media only screen and (min-width: $bp-tablet) {
       margin: 0 auto;
+      max-width: 347px;
+      
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin: 0;
+      
+      
     }
   }
 
@@ -141,6 +161,7 @@
 
     @media only screen and (min-width: $bp-desktop) {
       max-width: 473px;
+      text-align: left;
     }
   }
 
