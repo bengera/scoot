@@ -32,6 +32,7 @@
             text-align: left;
             position: relative;
             gap: 2rem;
+            margin: 2rem 4rem;
             
         }
 
@@ -66,6 +67,13 @@
             font-size: 24px;
         }
 
+    }
+
+    &__description-container {
+
+        @media only screen and (min-width: $bp-tablet) {
+            margin-left: 4rem;
+        }
     }
 
     &__description {
