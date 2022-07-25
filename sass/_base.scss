@@ -147,6 +147,8 @@ h3 {
 
         @media only screen and (min-width: $bp-tablet) {
             position: relative;
+            max-width: 1110px;
+            margin: 0 auto;
         }
     }
 
@@ -209,33 +211,48 @@ h3 {
             left: 95px;
         }
 
-        // @media only screen and (min-width: $bp-desktop) {
-        //     top: 106px;
-        //     left: 233px;
-        // }
+        @media only screen and (min-width: $bp-desktop) {
+            top: 14%;
+            left: 16%;
+        }
     }
 
     &__box.london {
 
         @media only screen and (min-width: $bp-tablet) {
-            top: -17px;
-            left: 263px;
+            top: -4%;
+            left: 37%;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            top: 4%;
+            left: 39%;
         }
     }
 
     &__box.jakarta {
 
         @media only screen and (min-width: $bp-tablet) {
-            top: 130px;
-            left: 500px;
+            top: 32%;
+            left: 69%;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            top: 42%;
+            left: 72%;
         }
     }
 
     &__box.yokohama {
 
         @media only screen and (min-width: $bp-tablet) {
-            top: 24px;
-            left: 547px;
+            top: 6%;
+            left: 78%;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            top: 14%;
+            left: 81%;
         }
     }
 
