@@ -20,15 +20,6 @@
 
 }
 
-// .logo {
-//     margin: 0 auto;
-//     height: 28px;
-
-//     @media only screen and (min-width: $bp-tablet) {
-//         margin: 0;
-//     }
-
-// }
 
 .hamburger-menu {
     background-color: transparent;
@@ -145,4 +136,8 @@
 .logo-link {
     margin: 0 auto;
     height: 28px;
+
+    @media only screen and (min-width: $bp-tablet) {
+        margin: 0 0 0 1rem;
+    }
 }
