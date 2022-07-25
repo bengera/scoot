@@ -697,7 +697,6 @@ h3 {
     @media only screen and (min-width: 62.5em) {
       .how-to__content-container {
         flex-direction: row;
-        gap: 5rem;
         max-width: 1140px;
         margin: 0 auto; } }
   .how-to__box {
@@ -738,6 +737,9 @@ h3 {
   @media only screen and (min-width: 37.5em) {
     .how-to__description-container {
       margin-left: 4rem; } }
+  @media only screen and (min-width: 62.5em) {
+    .how-to__description-container {
+      margin-left: 0; } }
   .how-to__description {
     color: #939CAA;
     font-size: 15px;

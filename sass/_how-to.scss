@@ -9,7 +9,7 @@
 
         @media only screen and (min-width: $bp-desktop) {
          flex-direction: row;   
-         gap: 5rem;
+        //  gap:5rem;
          max-width: 1140px;
          margin: 0 auto;
         }
@@ -73,6 +73,10 @@
 
         @media only screen and (min-width: $bp-tablet) {
             margin-left: 4rem;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            margin-left: 0;
         }
     }
 
