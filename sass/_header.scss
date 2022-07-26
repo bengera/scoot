@@ -72,11 +72,22 @@
         border: 0;
         cursor: pointer;
         width: 11.25rem;
-        padding: 1.2rem;
+        padding: 1rem;
         margin: 0 auto;
+        border: 2px solid $color-yellow;
 
         @media only screen and (min-width: $bp-desktop) {
             margin: 0;
+            &:hover {
+
+                @media only screen and (min-width: $bp-desktop) {
+                  background-color: transparent;
+                  color: $color-yellow;
+                  
+                    
+                }
+                
+              }
         }
     }
 

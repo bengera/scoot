@@ -97,6 +97,18 @@
         @media only screen and (min-width: $bp-tablet) {
             color: $color-dim-grey;
         }
+
+        &:hover {
+
+            @media only screen and (min-width: $bp-desktop) {
+              background-color: transparent;
+              color: $color-yellow;
+              
+                
+            }
+            
+          }
+          
     }
 
 
@@ -141,3 +153,5 @@
         margin: 0 0 0 1rem;
     }
 }
+
+

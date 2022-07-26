@@ -453,6 +453,10 @@ h3 {
     @media only screen and (min-width: 37.5em) {
       .nav-primary__list-link {
         color: #939CAA; } }
+    @media only screen and (min-width: 62.5em) {
+      .nav-primary__list-link:hover {
+        background-color: transparent;
+        color: #FCB72B; } }
 
 .nav-primary.show {
   display: block;
@@ -542,11 +546,16 @@ h3 {
     border: 0;
     cursor: pointer;
     width: 11.25rem;
-    padding: 1.2rem;
-    margin: 0 auto; }
+    padding: 1rem;
+    margin: 0 auto;
+    border: 2px solid #FCB72B; }
     @media only screen and (min-width: 62.5em) {
       .header__cta {
         margin: 0; } }
+  @media only screen and (min-width: 62.5em) and (min-width: 62.5em) {
+    .header__cta:hover {
+      background-color: transparent;
+      color: #FCB72B; } }
   .header__cta.apply {
     width: 95%; }
     @media only screen and (min-width: 37.5em) {
@@ -799,8 +808,13 @@ h3 {
   border: 0;
   cursor: pointer;
   width: 11.25rem;
-  padding: 1.2rem;
-  margin: 0 auto; }
+  padding: 1rem;
+  margin: 0 auto;
+  border: 2px solid #FCB72B; }
+  @media only screen and (min-width: 62.5em) {
+    .benefits__button:hover {
+      background-color: transparent;
+      color: #FCB72B; } }
   @media only screen and (min-width: 62.5em) {
     .benefits__button {
       margin: 0; } }
@@ -1004,9 +1018,24 @@ h3 {
   .faq__heading-top {
     font-size: 40px; } }
 
+@media only screen and (min-width: 62.5em) {
+  .faq__heading-top {
+    margin-top: 2.8rem; } }
+
+@media only screen and (min-width: 37.5em) {
+  .faq__right-content {
+    margin-top: 64px; } }
+
+@media only screen and (min-width: 62.5em) {
+  .faq__left-content, .faq__right-content {
+    display: flex; } }
+
 .accordion {
   width: 90%;
   margin: 2rem auto; }
+  @media only screen and (min-width: 62.5em) {
+    .accordion {
+      width: 60%; } }
   .accordion__item {
     background-color: #fff;
     color: #495567;
@@ -1027,6 +1056,9 @@ h3 {
       .accordion__item-header {
         width: auto;
         font-size: 48px; } }
+    @media only screen and (min-width: 62.5em) {
+      .accordion__item-header:hover {
+        background-color: #FFF4DF; } }
   .accordion__item-header::after {
     content: "";
     position: absolute;
@@ -1284,6 +1316,9 @@ h3 {
     color: #939CAA;
     font-family: "Space Mono", sans-serif;
     text-decoration: none; }
+    @media only screen and (min-width: 62.5em) {
+      .footer__list-link:hover {
+        color: #FCB72B; } }
   .footer__bottom {
     background-color: #333A44;
     height: 25rem;
@@ -1313,6 +1348,10 @@ h3 {
   .footer__social-icon {
     height: 24px;
     width: 24px; }
+    @media only screen and (min-width: 62.5em) {
+      .footer__social-icon:hover {
+        cursor: pointer;
+        filter: brightness(0) invert(1); } }
   .footer__logo {
     width: 100px;
     margin: 0 auto; }

@@ -9,12 +9,35 @@
     @media only screen and (min-width: $bp-tablet) {
        font-size: 40px; 
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin-top: 2.8rem;
+  }
+    
+  }
+
+  &__right-content {
+
+    @media only screen and (min-width: $bp-tablet) {
+      margin-top: 64px;
+    }
+  }
+
+  &__left-content,&__right-content {
+
+    @media only screen and (min-width: $bp-desktop) {
+        display: flex;
+    }
   }
 }
 
 .accordion {
   width: 90%;
   margin: 2rem auto;
+
+  @media only screen and (min-width: $bp-desktop) {
+      width: 60%;  
+  }
   
   &__item {
     background-color: #fff;
@@ -40,6 +63,17 @@
       font-size: 48px;
     }
 
+    
+
+    &:hover {
+
+      @media only screen and (min-width: $bp-desktop) {
+        background-color: $color-light-yellow;
+          
+      }
+      
+    }
+
   }
 
   &__item-header::after {
@@ -54,7 +88,7 @@
   }
 
   &__item-header.active::after {
-    // content: "\2212";
+    
     transform: rotate(180deg);
   }
 
