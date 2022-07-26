@@ -20,12 +20,14 @@ class Footer extends HTMLElement {
 
       <div class="footer__bottom-content">
       
+      <a class="logo-link" href="https://bengera.github.io/scoot/">
       <img class="footer__logo" src="src/assets/logo-white.svg" alt="logo-white">
+      </a>
 
       <ul class="footer__nav">
-        <li class="footer_list-item"><a href="/about.html" class="footer__list-link">About</a></li>
-        <li class="footer__list-item"><a href="/location.html" class="footer__list-link">Location</a></li>
-        <li class="footer__list-item"><a href="/careers.html" class="footer__list-link">Careers</a></li>
+        <li class="footer_list-item"><a href="https://bengera.github.io/scoot/about.html" class="footer__list-link">About</a></li>
+        <li class="footer__list-item"><a href="https://bengera.github.io/scoot/locations.html" class="footer__list-link">Location</a></li>
+        <li class="footer__list-item"><a href="https://bengera.github.io/scoot/careers.html" class="footer__list-link">Careers</a></li>
       </ul>
 
       <div class="footer__social-container">

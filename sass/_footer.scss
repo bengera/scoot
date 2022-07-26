@@ -26,6 +26,13 @@
             height: 300px;
         }
 
+        @media only screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            text-align: initial;
+            
+            
+        }
+
         &:before {
             content: "";
             display: block;
@@ -46,6 +53,11 @@
                 right: -412px;
             }
 
+            @media only screen and (min-width: $bp-desktop) {
+                right: -1265px;
+                bottom: -234px;
+            }
+
         }
 
 
@@ -60,6 +72,10 @@
         gap: 1rem;
         margin: 0 auto;
         z-index: 50;
+
+        @media only screen and (min-width: $bp-desktop) {
+            align-self: center;
+        }
     }
 
     &__img-app {
@@ -78,6 +94,10 @@
             font-size: 48px;
             max-width: 457px;
             margin: 0 auto;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+           align-self: center;   
         }
     }
 
@@ -132,9 +152,12 @@
 
         @media only screen and (min-width: $bp-tablet) {
             flex-direction: row;
-            // height: 96px;
-            // gap: 2rem;
+            
+        }
 
+        @media only screen and (min-width: $bp-desktop) {
+            max-width: 1370px;
+            margin: 0 auto; 
         }
     }
 
@@ -165,4 +188,3 @@
         }
     }
 }
-

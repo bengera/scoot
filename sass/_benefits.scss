@@ -13,13 +13,13 @@
 
   }
 
-  &__box-right {
+  // &__box-right {
 
-    @media only screen and (min-width: $bp-desktop) {
-      // border: 2px solid rgb(216, 97, 43);
-    }
+  //   @media only screen and (min-width: $bp-desktop) {
+  //     // border: 2px solid rgb(216, 97, 43);
+  //   }
 
-  }
+  // }
 
   &__box-left {
     display: flex;
@@ -126,7 +126,7 @@
     @media only screen and (min-width: $bp-tablet) {
       max-width: 457px;
       font-size: 48px;
-      // margin: 0 auto;
+      
     }
 
     @media only screen and (min-width: $bp-desktop) {
