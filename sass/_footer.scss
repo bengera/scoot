@@ -82,6 +82,12 @@
         width: 130px;
         height: 40px;
         cursor: pointer;
+
+        @media only screen and (min-width: $bp-desktop) {
+            width: 159px;
+            height: 56px;
+        }
+
     }
 
 
