@@ -810,7 +810,9 @@ h3 {
   width: 11.25rem;
   padding: 1rem;
   margin: 0 auto;
-  border: 2px solid #FCB72B; }
+  border: 2px solid #FCB72B;
+  text-align: center;
+  text-decoration: none; }
   @media only screen and (min-width: 62.5em) {
     .benefits__button:hover {
       background-color: transparent;

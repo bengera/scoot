@@ -175,6 +175,9 @@
     padding: 1rem;
     margin: 0 auto;
     border: 2px solid $color-yellow;
+    text-align: center;
+    text-decoration: none;
+    
 
     &:hover {
 
@@ -194,6 +197,7 @@
       
     }
   }
+
 
   &__arrow-left-down {
     position: absolute;
