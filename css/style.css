@@ -1224,10 +1224,15 @@ h3 {
     cursor: pointer;
     width: 11.25rem;
     padding: 1.2rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: 2px solid #FCB72B; }
     @media only screen and (min-width: 62.5em) {
       .locations__button {
         margin: 0; } }
+    @media only screen and (min-width: 62.5em) {
+      .locations__button:hover {
+        background-color: transparent;
+        color: #FCB72B; } }
 
 .footer {
   background-color: #495567;
