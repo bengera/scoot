@@ -698,8 +698,8 @@ h3 {
       left: -1400px; } }
   @media only screen and (min-width: 37.5em) and (min-width: 62.5em) {
     .how-to__box.last-box:before {
-      width: 75rem;
-      left: -1201px; } }
+      width: 130rem;
+      left: -2000px; } }
 
 .benefits__content-container {
   display: flex;
