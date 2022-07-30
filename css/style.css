@@ -1318,7 +1318,7 @@ h3 {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
-    margin-bottom: 85px; }
+    margin-bottom: 45px; }
     @media only screen and (min-width: 37.5em) {
       .footer__nav {
         flex-direction: row;
