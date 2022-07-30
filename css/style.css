@@ -625,7 +625,8 @@ h3 {
       .how-to__content-container {
         flex-direction: row;
         max-width: 1140px;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        margin-bottom: 200px; } }
   .how-to__box {
     display: flex;
     flex-direction: column;
