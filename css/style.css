@@ -1215,9 +1215,10 @@ h3 {
       .locations__bottom-content {
         flex-direction: row;
         align-items: center;
-        max-width: 1200px;
         text-align: left;
-        gap: 2.2rem; } }
+        max-width: 1297px;
+        gap: 5.2rem;
+        margin: 0 auto; } }
   .locations__button {
     background-color: #FCB72B;
     color: #F2F5F9;
@@ -1227,6 +1228,7 @@ h3 {
     width: 11.25rem;
     padding: 1.2rem;
     margin: 0 auto;
+    margin-top: 32px;
     border: 2px solid #FCB72B; }
     @media only screen and (min-width: 62.5em) {
       .locations__button {
