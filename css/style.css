@@ -1247,7 +1247,7 @@ h3 {
       height: auto; } }
   .footer__top {
     padding: 2rem;
-    height: 50%;
+    height: 320px;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -1333,7 +1333,7 @@ h3 {
         color: #FCB72B; } }
   .footer__bottom {
     background-color: #333A44;
-    height: 25rem;
+    height: 438px;
     z-index: 100; }
     @media only screen and (min-width: 37.5em) {
       .footer__bottom {

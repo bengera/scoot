@@ -14,7 +14,7 @@
     &__top {
 
         padding: 2rem;
-        height: 50%;
+        height: 320px;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -149,7 +149,7 @@
 
     &__bottom {
         background-color: $color-dark-grey;
-        height: 25rem;
+        height: 438px;
         z-index: 100;
 
         @media only screen and (min-width: $bp-tablet) {
